@@ -1,0 +1,34 @@
+.footer{
+	background: #2F3541;
+	height: $footer;
+	font-size: 11px;
+	.footer__copy{
+		float: left;
+		line-height: $footer;
+		height: $footer;
+		font-size: 11px;
+		color: #fff;
+		opacity: .5;
+		padding: 0 14px;
+	}
+	.footer__nav{
+		list-style: none;
+		float: left;
+		border-left: 1px solid #22272F;
+		box-shadow: -1px 0 0 #464B56;
+		li{
+			float: left;
+		}
+		a{
+			float: left;
+			height: $footer;
+			line-height: $footer;
+			font-size: 12px;
+			text-decoration: none;
+			color: #fff;
+			padding: 0 17px;
+			border-right: 1px solid #464B56;
+			box-shadow: 1px 0 0 #22272F;
+		}
+	}
+}

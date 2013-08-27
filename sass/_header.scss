@@ -1,0 +1,244 @@
+.header{
+	@include background-image(linear-gradient(#383D4A, #232B35));
+	height: $header;
+	@include box-shadow(0 1px 4px rgba(0,0,0,.4));
+	overflow: hidden;
+	position: relative;
+	z-index: 25;
+	.header__logo{
+		float: left;
+		width: 150px;
+		position: relative;
+		height: $header;
+		a{
+			@include s(logo);
+			position: absolute;
+			top: 14px;
+			left: 15px; 
+		}
+	}
+	%headerblock{
+		float: left;
+		border-left: 1px solid #242931;
+		box-shadow: -1px 0 0 #4A4F5A;
+		height: $header;
+		line-height: $header;
+		padding: 0 17px;
+		cursor: pointer;
+		position: relative;
+		@include transition(all .1s linear);
+		&:hover{
+			background: rgba(#fff, .1);
+			@include transition(all .1s linear);
+		}
+	}
+	.header__trade{
+		@extend %headerblock;
+		select{
+			margin-left: 20px;
+		}
+	}
+	h3{
+		font-size: 15px;
+		font-weight: normal;
+		@include demi;
+		color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		text-transform: uppercase;
+	}
+	i{
+		vertical-align: middle;
+		
+	}
+	.header__numbericon{
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 10px;
+		line-height: 15px;
+		color: #fff;
+		margin-left: 10px;
+		border-radius: 15px;
+		@include background-image(linear-gradient(#F88D94, #DB5B63));
+		
+	}
+	.header__tradeicon{
+		@include s(trades);
+		margin-right: 15px;
+	}
+	.header__livetradesicon{
+		@include s(livetrades);
+		margin-right: 15px;
+	}
+	.header__settledtradesicon{
+		@include s(settledtrades);
+		margin-right: 15px;
+	}
+	.header__livetrades, .header__settledtrades{
+		@extend %headerblock;
+		width: auto;
+	}
+	.account{
+		position: relative;
+		@extend %headerblock;
+		padding: 0 24px 0 14px;
+		cursor: pointer;
+		.account__icon{
+			@include s(user);
+			vertical-align: middle;
+			margin-right: 14px;
+		}
+		.account__name{
+			width: 100px;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 13px;
+			color: #fff;
+			line-height: 1.1;
+		}
+		.account__arrow{
+			@include s(arrow);
+			position: absolute;
+			right: 17px;
+			top: 50%;
+			margin-top: -3px;
+		}
+	}
+	.youramount{
+		@extend %headerblock;
+		padding: 0 42px 0 16px;
+		.youramount__label{
+			display: inline-block;
+			vertical-align: middle;
+			color: #ABADB0;
+			margin-right: 21px;
+			line-height: 1.1;
+		}
+		.youramount__value{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 1;
+			font-size: 30px;
+			color: #fff;
+		}
+		.youramount__arrow{
+			@include s(arrow);
+			position: absolute;
+			right: 17px;
+			top: 50%;
+			margin-top: -3px;
+		}
+	}
+	.header__signout{
+		float: right;
+		height: $header;
+		line-height: $header;
+		padding: 0 15px;
+		border-left: 1px solid #242931;
+		box-shadow: -1px 0 0 #4A4F5A;
+		a{
+			display: inline-block;
+			text-decoration: none;
+			height: 28px;
+			line-height: 28px;
+			color: #fff;
+			padding: 0px 16px;
+			text-transform: uppercase;
+			font-size: 11px;
+			border: 1px solid #545863;
+			border-right-color: #191F26;
+			border-bottom-color: #191F26;
+			border-radius: 4px;
+			@include demi;
+			
+		}
+	}
+}
+.recommend{
+	background: #F0F3F5;
+	@include box-sizing(border-box);
+	border-bottom: 1px solid #DDE0E1;
+	height: $recommend;
+	white-space:nowrap;
+	font-size: 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 20;
+	.recommend__label{
+		height: $recommend;
+		line-height: $recommend;
+		padding: 0 15px;
+		text-transform: uppercase;
+		font-size: 11px;
+		color: #333;
+		display: inline-block;
+		position: relative;
+		background: #F6F9FA;
+		@include box-sizing(border-box);
+		border-bottom: 1px solid #DDE0E1;
+		vertical-align: top;
+		&:before{
+			@include s(recommend__label);
+			content: ' ';
+			position: absolute;
+			right: -4px;
+			opacity: .2;
+			top: 0;
+			height: 100%;
+		}
+	}
+	.recommend__pair{
+		padding: 0 15px 0 12px;
+		display: inline-block;
+		font-size: 12px;
+		vertical-align: top;
+		height: $recommend;
+		line-height: $recommend;
+		border-right: 1px solid #D8DADC;
+	}
+	.recommend__pairname{
+		color: #000;
+		opacity: .5;
+		font-size: 13px;
+		display: inline-block;
+	}
+	.recommend__percent{
+		@include bold;
+		font-size: 13px;
+		color: #000;
+		display: inline-block;
+	}
+	.recommend__status{
+		display: inline-block;
+		@include reg;
+		font-size: 10px;
+		text-transform: uppercase;
+		padding: 0 4px;
+		line-height: 1;
+		height: 14px;
+		line-height: 14px;
+		vertical-align: middle;
+		margin: 0 8px;
+		border-radius: 3px;
+		position: relative;
+		top: -1px;
+		color: #fff;
+		&.is-low{
+			background: #F98F96;
+		}
+		&.is-high{
+			background: #AACB83;
+		}
+	}
+}
+
+
+.expiries{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: $expiries;
+}
