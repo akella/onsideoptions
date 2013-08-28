@@ -42,7 +42,7 @@
 		background-color: #373737;
 		@include background-image(linear-gradient(bottom, #e9ebee 0%, #e9ebee 0.22%, #fff 100%));
 		cursor: pointer;
-		border-left: 1px solid #DADADA;
+		border-right: 1px solid #DADADA;
 		i{
 			position: absolute;
 			@include s(expless);
