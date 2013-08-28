@@ -1,0 +1,135 @@
+.expiries{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: $left;
+	z-index: 120;
+	height: $expiries;
+	@include box-sizing(border-box);
+	@include background-image(linear-gradient(#FFFFFF, #EAECEE));
+	.expiries__more{
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		border-left: 1px solid #CCCFD2;
+		//border-right: 1px solid #DADADA;
+		background: transparent;
+		width: 19px;
+		cursor: pointer;
+		&.is-active{
+			@include background-image(linear-gradient(#D8DADC, #E9ECEE));
+		}
+		i{
+			@include s(exparrow);
+			position: absolute;
+			top: 50%;
+			margin-top: -3px;
+			left: 50%;
+			margin-left: -4px;
+			
+		}
+	}
+	.expiries__drop{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: $left;
+	}
+	.expiries__less{
+		height: 12px;
+		position: relative;
+		background-color: #373737;
+		@include background-image(linear-gradient(bottom, #e9ebee 0%, #e9ebee 0.22%, #fff 100%));
+		cursor: pointer;
+		border-left: 1px solid #DADADA;
+		i{
+			position: absolute;
+			@include s(expless);
+			position: absolute;
+			left: 50%;
+			margin-left: -4px;
+			top: 2px;
+		}
+	}
+}
+
+.expiry{
+	height: 70px;
+	padding-left: 57px;
+	overflow: hidden;
+	position: relative;
+	@include box-sizing(border-box);
+	border-right: 1px solid #DADADA;
+	border-bottom: 1px solid #D1D4D6;
+	@include background-image(linear-gradient(bottom, #e9ebee 0%, #e9ebee 0.22%, #fff 100%));
+	cursor: pointer;
+	.expiry__icon{
+		top: 19px;
+		left: 14px;
+		position: absolute;
+		@include s(watchnot);
+	}
+	.expiry__timeleft{
+		line-height: 1;
+		padding-top: 16px;
+		float: left;
+		width: 61px; 
+		b{
+			font-size: 25px;
+			@include reg;
+			font-weight: normal;
+			color: #0b0b0b; 
+			display: block;
+		}
+		span{
+			font-size: 14px;
+			@include lite;
+			display: block;
+			opacity: .4;
+		}
+	}
+	.expiry__time{
+		float: left;
+		padding-top: 15px;
+		margin-right: 5px;
+		width: 38px;
+	}
+	.expiry__label{
+		font-size: 8px;
+		text-transform: uppercase;
+		color: #C0C2C2;
+		@include demi;
+		margin-bottom: 6px;
+		text-align: center;
+		display: block;
+	}
+	.expiry__digit{
+		@include s(digit);
+		line-height: 24px;
+		text-align: center;
+		font-size: 20px;
+		@include demi;
+		float: left;
+		margin-right: 1px;
+	}
+	&:hover{
+		@include background-image(linear-gradient(bottom, #c7cdd2 0%, #fff 100%));
+	}
+	&.is-active{
+		background-color: #f0f5f8;
+		@include background-image(linear-gradient(bottom, #c7cdd2 0%, #fff 100%));
+		.expiry__icon{
+			@include s(watch);
+		}
+		.expiry__timeleft{
+			b{
+				@include demi;
+			}
+			span{
+				opacity: 1;
+				@include reg;
+			}
+		}
+	}
+}

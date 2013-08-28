@@ -1,15 +1,21 @@
 .marketassets{
 	position: absolute;
-	z-index: 30;
+	z-index: 50;
 	bottom: 0;
 	right: 0;
 	left: $left;
 	height: $marketassets;
 	padding-right: 21px;
+	z-index: 125;
 	//overflow-x:hidden;
 	.marketassets__wrap{
 		width: 100%;
 		height: $marketassets;
+		// overflow-y: auto;
+		// overflow-x: auto;
+		white-space: nowrap;
+		font-size: 0;
+		margin-bottom: -10px; 
 	}
 	.marketassets__next,.marketassets__prev{
 		position: absolute;
@@ -17,6 +23,7 @@
 		right: 0;
 		width: 21px;
 		height: 35px;
+		z-index: 30;
 		background: #FFF;
 		border-left: 1px solid #E5E5E5;
 		border-bottom: 1px solid #E5E5E5;
@@ -57,10 +64,10 @@
 	}
 }
 .marketasset{
-	float: left;
-	width: 12.5%;
+	display: inline-block;
+	font-size: 12px;
 	height: $marketassets;
-	padding: 21px 0 0 21px;
+	padding: 21px 46px 0 21px;
 	@include box-sizing(border-box);
 	border-left: 1px solid #E5E5E5;
 	border-bottom: 1px solid #E5E5E5;
@@ -79,6 +86,7 @@
 		margin-bottom: 3px;
 		position: relative;
 		z-index: 3;
+		white-space: nowrap;
 	}
 	.marketasset__quo{
 		color: #000;

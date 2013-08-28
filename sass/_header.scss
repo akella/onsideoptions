@@ -4,7 +4,6 @@
 	@include box-shadow(0 1px 4px rgba(0,0,0,.4));
 	overflow: hidden;
 	position: relative;
-	z-index: 25;
 	.header__logo{
 		float: left;
 		width: 150px;
@@ -180,6 +179,7 @@
 		@include box-sizing(border-box);
 		border-bottom: 1px solid #DDE0E1;
 		vertical-align: top;
+		@include demi;
 		&:before{
 			@include s(recommend__label);
 			content: ' ';
@@ -204,6 +204,7 @@
 		opacity: .5;
 		font-size: 13px;
 		display: inline-block;
+		@include reg;
 	}
 	.recommend__percent{
 		@include bold;
@@ -217,14 +218,13 @@
 		font-size: 10px;
 		text-transform: uppercase;
 		padding: 0 4px;
-		line-height: 1;
 		height: 14px;
-		line-height: 14px;
+		line-height: 13px;
 		vertical-align: middle;
 		margin: 0 8px;
 		border-radius: 3px;
 		position: relative;
-		top: -1px;
+		top: -2px;
 		color: #fff;
 		&.is-low{
 			background: #F98F96;

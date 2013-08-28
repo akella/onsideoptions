@@ -56,16 +56,52 @@ body{
 a img,fieldset{
 	border:none;
 }
+
+
+
+@font-face {
+    font-family: 'corporate_sdemi';
+    src: url('fonts/corporates-demi-webfont.woff') format('woff'),
+         url('fonts/corporates-demi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'corporate_sbold';
+    src: url('fonts/corporates-bold-webfont.woff') format('woff'),
+         url('fonts/corporates-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'corporate_sregular';
+    src: url('fonts/corporates-regular-webfont.woff') format('woff'),
+         url('fonts/corporates-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'corporate_slight';
+    src: url('fonts/corporates-light-webfont.woff') format('woff'),
+         url('fonts/corporates-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @mixin reg(){
-	font-family: Arial,sans-serif;
+	font-family: "corporate_sregular",Arial,sans-serif;
 }
 @mixin lite(){
-	font-family: Arial,sans-serif;
+	font-family: "corporate_slight",Arial,sans-serif;
 }
 @mixin demi(){
-	font-family: Arial,sans-serif;
+	font-family: "corporate_sdemi",Arial,sans-serif;
 }
 @mixin bold(){
-	font-family: Arial,sans-serif;
+	font-family: "corporate_sbold",Arial,sans-serif;
 }
 
