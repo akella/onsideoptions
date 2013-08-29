@@ -1,11 +1,13 @@
 @import "lib/base"; // mixins, sprites
 @import "reset";
 @import "layouts";
+@import "jscrollpane";
 
 @import "footer";
 @import "header";
 @import "marketassets";
 @import "bet";
 @import "expiries";
+@import "pairs";
 
 @import "dashboard";

@@ -1,0 +1,144 @@
+.pairs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: -17px;
+	bottom: 0;
+	padding-right: 17px;
+	padding-left: 9px;
+	.pairs__scroll{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		width: 9px;
+		@include box-sizing(border-box);
+		background: #E0E2E4;
+		border-right: 1px solid #CACACA;
+	}
+}
+.pair{
+	height: 55px;
+	border-bottom: 1px solid #E2DDDD;
+	@include background-image(linear-gradient(#fff, #EFF0F1));
+	cursor: pointer;
+	position: relative;
+	border-right: 1px solid #D2D5D7;
+	@include box-sizing(border-box);
+	padding-left: 14px;
+	z-index: 2;
+	.pair__name{
+		font-size: 13px;
+		opacity: .5;
+		color: #000;
+		text-transform: uppercase;
+		display: table-cell;
+		vertical-align: middle;
+		left: 14px;
+		top: 0px;
+		@include demi;
+		line-height: 1;
+		top: 0;
+		height: 55px;
+	}
+	.pair__percent{
+		position: absolute;
+		top: 0;
+		left: 169px;
+		width: 86px;
+		@include lite;
+		text-align: right;
+		font-size: 25px;
+		color: #000;
+		line-height: 55px;
+		height: 55px;
+		&.is-red{
+			color: #f4464f;
+		}
+	}
+	.pair__quo{
+		position: absolute;
+		left: 122px;
+		top: 0;
+		width: 48px;
+		text-align: left;
+		height: 55px;
+		//line-height: 55px;
+		line-height: 1;
+		font-size: 11px;
+		opacity: .4;
+		div{
+			display: table-cell;
+			vertical-align: middle;
+			height: 55px;
+		}
+	}
+	.pair__icon{
+		position: absolute;
+		left: 100px;
+		top: 23px;
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: red;
+	}
+	@each $s in over, under, highline, lowline, hightouch, lowtouch, 
+	doublenotouch, tunnel, overtugofwar,undertugofwar{
+		&.pair_#{$s}{
+			.pair__icon{
+				@include s(pair_#{$s});
+			}
+		}
+	}
+	&.is-active{
+		margin-right: -24px;
+		border-right: none;
+		//@include background-image(linear-gradient(#fff, #C8CED2));
+		border-bottom-color: #C8CED2;
+		@include si(pair_active);
+		.pair__name{
+			opacity: 1;
+		}
+		.pair__percent{
+			@include demi;
+		}
+	}
+}
+
+
+.pairgroup{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: ' ';
+		width: 20px;
+		right: -5px;
+		top: 0;
+		bottom: 0;
+		border-radius: 10px;
+		z-index: 1;
+		@include border-radius(0 5px 5px / 0 7px 7px);
+		opacity: .5;
+	}
+	//cycle thru color labels and actual colors and gradients
+	@each $s in 
+		red #D4AAA5 #EDE9E8, 
+		yellow #DDC493 #EFEDE6, 
+		green #96B28C #E6EDE6, 
+		azure #8CBAC9 #E4EDF0, 
+		blue #9FB7CB #E6EAEF, 
+		purple #C99CD1 #ECE6EF
+	{
+		&.pairgroup_#{nth($s, 1)}{
+			display: block;
+			&:before{
+				//$newc: #{nth($s, 1)};
+				background-color: #{nth($s, 2)};
+			}
+			.pair{
+				border-right-color: #{nth($s, 2)};
+				//@include background-image(linear-gradient(#fff, #{nth($s, 3)}));
+			}
+		}
+	}
+}

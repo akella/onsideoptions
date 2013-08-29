@@ -6,7 +6,10 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/app.js"></script>
+	<!--<script src="js/jquery.js"></script>
+	<script src="js/jscrollpane.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/common.js"></script>-->
 </head>
 <body>
 <!-- BEGIN l-header -->
@@ -122,7 +125,7 @@ amount</div>
 
 		<div class="expiries__more is-active"><i></i></div>
 
-		<div class="expiries__drop">
+		<div class="expiries__drop" style="display:none">
 			<!-- BEGIN expiry -->
 			<div class="expiry">
 				<div class="expiry__icon"></div>
@@ -281,8 +284,134 @@ amount</div>
 <section class="l-middle">
 	<!-- BEGIN l-pairs -->
 	<section class="l-pairs">
-		<div class="pairs">
-			
+		<div class="pairs"><div class="pairs__scroll"></div>
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_red">
+				
+				<!-- BEGIN pair -->
+				<div class="pair pair_under">
+					<div class="pair__name">
+						Under
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350<br>1.5342424</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+				<!-- BEGIN pair -->
+				<div class="pair pair_over">
+					<div class="pair__name">
+						over
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_yellow">
+			<!-- BEGIN pair -->
+			<div class="pair pair_highline is-active">
+				<div class="pair__name"><div>
+					High<br> line
+				</div></div>
+				<div class="pair__icon"></div>
+				<div class="pair__quo"><div>1.538350<br>1.538350</div></div>
+				<div class="pair__percent">86.5%</div>
+			</div>
+			<!-- END pair -->
+			<!-- BEGIN pair -->
+			<div class="pair pair_lowline">
+				<div class="pair__name">
+					low<br> line
+				</div>
+				<div class="pair__icon"></div>
+				<div class="pair__quo"><div>1.538350</div></div>
+				<div class="pair__percent is-red">486.5%</div>
+			</div>
+			<!-- END pair -->
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_azure">
+				<!-- BEGIN pair -->
+				<div class="pair pair_hightouch">
+					<div class="pair__name">
+						high<br> touch
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+				<!-- BEGIN pair -->
+				<div class="pair pair_lowtouch">
+					<div class="pair__name">
+						low<br> touch
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_blue">
+				<!-- BEGIN pair -->
+				<div class="pair pair_doublenotouch">
+					<div class="pair__name">
+						double<br> no touch
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_green">
+				<!-- BEGIN pair -->
+				<div class="pair pair_tunnel">
+					<div class="pair__name">
+						tunnel
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+			<!-- BEGIN pairgroup pairgroup_red -->
+			<div class="pairgroup pairgroup_purple">
+				<!-- BEGIN pair -->
+				<div class="pair pair_overtugofwar">
+					<div class="pair__name">
+						over tug<br> of war
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+				<!-- BEGIN pair -->
+				<div class="pair pair_undertugofwar">
+					<div class="pair__name">
+						under tug<br> of war
+					</div>
+					<div class="pair__icon"></div>
+					<div class="pair__quo"><div>1.538350</div></div>
+					<div class="pair__percent">86.5%</div>
+				</div>
+				<!-- END pair -->
+			</div>
+			<!-- END pairgroup pairgroup_red -->
+
 		</div>
 	</section>
 	<!-- END l-pairs -->
