@@ -73,7 +73,7 @@
 			height: 55px;
 		}
 	}
-	.pair__icon{
+	.pair__instrument{
 		position: absolute;
 		left: 100px;
 		top: 23px;
@@ -85,7 +85,7 @@
 	@each $s in over, under, highline, lowline, hightouch, lowtouch, 
 	doublenotouch, tunnel, overtugofwar,undertugofwar{
 		&.pair_#{$s}{
-			.pair__icon{
+			.pair__instrument{
 				@include s(pair_#{$s});
 			}
 		}
