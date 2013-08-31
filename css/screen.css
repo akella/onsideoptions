@@ -114,7 +114,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .expiries { position: absolute; left: 0; bottom: 0; height: 70px; }
 
 .marketassets { position: absolute; z-index: 50; bottom: 0; right: 0; left: 278px; height: 70px; padding-right: 21px; z-index: 125; background: #fff; }
-.marketassets .marketassets__wrap { width: 100%; height: 70px; white-space: nowrap; font-size: 0; margin-bottom: -10px; }
+.marketassets .marketassets__wrap { white-space: nowrap; font-size: 0; overflow: hidden; position: absolute; right: 0; bottom: -7px; top: -2px; padding-top: 2px; left: 0; }
 .marketassets .marketassets__next, .marketassets .marketassets__prev { position: absolute; top: 0; right: 0; width: 21px; height: 35px; z-index: 30; background: #FFF; border-left: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 .marketassets .marketassets__next i, .marketassets .marketassets__prev i { position: absolute; top: 12px; left: 9px; background: url('../img/icons-s22b36ef395.png') 0 -165px no-repeat; display: inline-block; width: 5px; height: 9px; display: inline-block; }
 .marketassets .marketassets__next:hover, .marketassets .marketassets__prev:hover { background: #eee; }
