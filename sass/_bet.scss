@@ -11,6 +11,15 @@
 .icon{
 	display: inline-block;
 }
+.arrow{
+	display: inline-block;
+	&.is-up{
+		@include s(up);
+	}
+	&.is-down{
+		@include s(down);
+	}
+}
 @each $s in over, under, highline, lowline, hightouch, lowtouch, 
 	doublenotouch, tunnel, overtugofwar,undertugofwar{
 		.icon_#{$s}{
@@ -41,13 +50,26 @@
 			font-weight: normal;
 			@include demi;
 			font-size: 25px;
+			margin-top: -2px;
+			display: block;
+		}
+	}
+	.bet__direction{
+		position: absolute;
+		top: 32px;
+		left: 190px;
+		&.is-up{
+			@include s(up);
+		}
+		&.is-down{
+			@include s(down);
 		}
 	}
 	.bet__price{
 		float: left;
 		width: 123px;
 		text-align: right;
-		border: 1px solid red;
+		line-height: 1.1;
 		small{
 			font-size: 10px;
 			text-transform: uppercase;
@@ -94,4 +116,83 @@
 	@include bold;
 	line-height: 1;
 	text-shadow:1px 1px 1px #fff, -1px -1px 1px #D7D9DB;
+}
+.bet__strikeswrap{
+	margin: 25px 20px 18px 18px;
+}
+.bet__strikes{
+	border: 1px solid #CCCFD0;
+	border-radius: 6px;
+	display: inline-block;
+	width: 100%;
+	.bet__strike{
+		float: left;
+		width: 50%;
+		position: relative;
+		@include box-sizing(border-box);
+		padding: 15px 0 15px 12px;
+		line-height: 1;
+		&:first-child{
+			box-shadow:1px 0 0 #CCCFD0;
+		}
+		.arrow{
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+			margin-right: 5px;
+		}
+		small{
+			font-size: 10px;
+			text-transform: uppercase;
+			opacity: .3;
+			color: #000;
+			@include reg;
+			display: block;
+			left: 0;
+			top: -17px;
+			position: absolute;
+		}
+		.bet__strikeq{
+			@include reg;
+			font-size: 18px;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+}
+.createbet{
+	font-size: 0;
+	width: 270px;
+	margin-left: 18px;
+	.createbet__input{
+		width: 132px;
+		@include box-sizing(border-box);
+		height: 50px;
+		line-height: 50px;
+		margin-right: 6px;
+		padding: 0 12px;
+		border: 1px solid #d8d8d8;
+		@include border-radius(3px);
+		@include background-clip(padding-box);
+		background-color: #fff;
+		@include box-shadow(inset 2px 3px 5px rgba(0,0,0,.07));
+	}
+	.createbet__submit{
+		display: inline-block;
+		text-align: center;
+		@include border-radius(3px);
+		@include background-clip(padding-box);
+		background-color: #fff;
+		@include box-shadow(0 1px 1px rgba(0,0,0,.15));
+		@include background-image(linear-gradient(bottom, #769a3c 0%, #a3c869 100%));
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include bold;
+		font-size: 15px;
+		height: 50px;
+		line-height: 50px;
+		width: 132px;
+		cursor: pointer;
+	}
 }
