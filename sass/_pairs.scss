@@ -2,10 +2,12 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: -17px;
+	//right: -17px;
+	right: 0;
 	bottom: 0;
-	padding-right: 17px;
+	//padding-right: 17px;
 	padding-left: 9px;
+	
 	.pairs__scroll{
 		position: absolute;
 		bottom: 0;
@@ -15,6 +17,23 @@
 		@include box-sizing(border-box);
 		background: #E0E2E4;
 		border-right: 1px solid #CACACA;
+	}
+	.pairs__thumb{
+		@include s(thumb);
+		display: inline-block;
+		margin-left: 1px;
+		margin-top: 1px;
+		cursor: pointer;
+		position: absolute;
+	}
+	.pairs__wrap{
+		position: absolute;
+		left: 9px;
+		top: 0;
+		bottom: 0;
+		right: -20px;
+		padding-right: 20px;
+		overflow: hidden;
 	}
 }
 .pair{
