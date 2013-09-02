@@ -1,8 +1,9 @@
 .expiries{
 	position: absolute;
-	top: 90px - 160px;
+	top: 0;
 	left: 0;
-	width: $left;
+	bottom: 0;
+	right: 0;
 	z-index: 120;
 	height: $expiries;
 	@include box-sizing(border-box);

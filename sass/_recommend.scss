@@ -1,0 +1,82 @@
+.recommend{
+	background: #F0F3F5;
+	@include box-sizing(border-box);
+	border-bottom: 1px solid #DDE0E1;
+	height: $recommend;
+	white-space:nowrap;
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	right: 0;
+	z-index: 20;
+	.recommend__label{
+		height: $recommend;
+		line-height: $recommend;
+		padding: 0 15px;
+		text-transform: uppercase;
+		font-size: 11px;
+		color: #333;
+		display: inline-block;
+		position: relative;
+		background: #F6F9FA;
+		@include box-sizing(border-box);
+		border-bottom: 1px solid #DDE0E1;
+		vertical-align: top;
+		@include demi;
+		&:before{
+			@include s(recommend__label);
+			content: ' ';
+			position: absolute;
+			right: -4px;
+			opacity: .2;
+			top: 0;
+			height: 100%;
+		}
+	}
+	.recommend__pair{
+		padding: 0 15px 0 12px;
+		display: inline-block;
+		font-size: 12px;
+		vertical-align: top;
+		height: $recommend;
+		line-height: $recommend;
+		border-right: 1px solid #D8DADC;
+	}
+	.recommend__pairname{
+		color: #000;
+		opacity: .5;
+		font-size: 13px;
+		display: inline-block;
+		@include reg;
+	}
+	.recommend__percent{
+		@include bold;
+		font-size: 13px;
+		color: #000;
+		display: inline-block;
+	}
+	.recommend__status{
+		display: inline-block;
+		@include reg;
+		font-size: 10px;
+		text-transform: uppercase;
+		padding: 0 4px;
+		height: 14px;
+		line-height: 13px;
+		vertical-align: middle;
+		margin: 0 8px;
+		border-radius: 3px;
+		position: relative;
+		top: -2px;
+		color: #fff;
+		&.is-low{
+			background: #F98F96;
+		}
+		&.is-high{
+			background: #AACB83;
+		}
+	}
+}

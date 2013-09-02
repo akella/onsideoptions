@@ -34,6 +34,12 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .l-showpair { left: 278px; right: 309px; }
 .l-showpair img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: block; width: 100%; height: 100%; }
 
+.l-marketassets { position: absolute; z-index: 50; top: -70px; right: 0; left: 278px; height: 70px; }
+
+.l-recommend { position: absolute; left: 0; right: 0; top: -100px; }
+
+.l-expiries { position: absolute; top: -70px; left: 0; width: 278px; }
+
 .l-footer { top: auto; height: 40px; }
 
 /*scroll*/
@@ -101,19 +107,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .header .header__signout { float: right; height: 60px; line-height: 60px; padding: 0 15px; border-left: 1px solid #242931; box-shadow: -1px 0 0 #4a4f5a; }
 .header .header__signout a { display: inline-block; text-decoration: none; height: 28px; line-height: 28px; color: #fff; padding: 0px 16px; text-transform: uppercase; font-size: 11px; border: 1px solid #545863; border-right-color: #191F26; border-bottom-color: #191F26; border-radius: 4px; font-family: "corporate_sdemi",Arial,sans-serif; }
 
-.recommend { background: #F0F3F5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #DDE0E1; height: 30px; white-space: nowrap; font-size: 0; overflow: hidden; position: absolute; left: 0; right: 0; top: -100px; z-index: 20; }
-.recommend .recommend__label { height: 30px; line-height: 30px; padding: 0 15px; text-transform: uppercase; font-size: 11px; color: #333; display: inline-block; position: relative; background: #F6F9FA; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #DDE0E1; vertical-align: top; font-family: "corporate_sdemi",Arial,sans-serif; }
-.recommend .recommend__label:before { background: url('../img/icons-s6ea4781ce3.png') 0 -170px no-repeat; display: inline-block; width: 4px; height: 30px; content: ' '; position: absolute; right: -4px; opacity: .2; top: 0; height: 100%; }
-.recommend .recommend__pair { padding: 0 15px 0 12px; display: inline-block; font-size: 12px; vertical-align: top; height: 30px; line-height: 30px; border-right: 1px solid #D8DADC; }
-.recommend .recommend__pairname { color: #000; opacity: .5; font-size: 13px; display: inline-block; font-family: "corporate_sregular",Arial,sans-serif; }
-.recommend .recommend__percent { font-family: "corporate_sbold",Arial,sans-serif; font-size: 13px; color: #000; display: inline-block; }
-.recommend .recommend__status { display: inline-block; font-family: "corporate_sregular",Arial,sans-serif; font-size: 10px; text-transform: uppercase; padding: 0 4px; height: 14px; line-height: 13px; vertical-align: middle; margin: 0 8px; border-radius: 3px; position: relative; top: -2px; color: #fff; }
-.recommend .recommend__status.is-low { background: #F98F96; }
-.recommend .recommend__status.is-high { background: #AACB83; }
-
-.expiries { position: absolute; left: 0; bottom: 0; height: 70px; }
-
-.marketassets { position: absolute; z-index: 50; top: -70px; right: 0; left: 278px; height: 70px; padding-right: 21px; z-index: 125; background: #fff; }
+.marketassets { position: absolute; right: 0; bottom: 0; top: 0; left: 0; padding-right: 21px; z-index: 125; background: #fff; }
 .marketassets .marketassets__wrap { white-space: nowrap; font-size: 0; overflow: hidden; position: absolute; right: 0; bottom: -7px; top: -2px; padding-top: 2px; left: 0; }
 .marketassets .marketassets__next, .marketassets .marketassets__prev { position: absolute; top: 0; right: 0; width: 21px; height: 35px; z-index: 30; background: #FFF; border-left: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 .marketassets .marketassets__next i, .marketassets .marketassets__prev i { position: absolute; top: 12px; left: 9px; background: url('../img/icons-s6ea4781ce3.png') 0 -210px no-repeat; display: inline-block; width: 5px; height: 9px; display: inline-block; }
@@ -193,7 +187,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .createbet .createbet__input { width: 132px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 50px; line-height: 50px; margin-right: 6px; padding: 0 12px; border: 1px solid #d8d8d8; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #fff; -webkit-box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.07); -moz-box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.07); box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.07); }
 .createbet .createbet__submit { display: inline-block; text-align: center; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #fff; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #769a3c), color-stop(100%, #a3c869)); background-image: -webkit-linear-gradient(bottom, #769a3c 0%, #a3c869 100%); background-image: -moz-linear-gradient(bottom, #769a3c 0%, #a3c869 100%); background-image: -o-linear-gradient(bottom, #769a3c 0%, #a3c869 100%); background-image: -ms-linear-gradient(bottom, #769a3c 0%, #a3c869 100%); background-image: linear-gradient(bottom, #769a3c 0%, #a3c869 100%); color: #fff; text-decoration: none; text-transform: uppercase; font-family: "corporate_sbold",Arial,sans-serif; font-size: 15px; height: 50px; line-height: 50px; width: 132px; cursor: pointer; }
 
-.expiries { position: absolute; top: -70px; left: 0; width: 278px; z-index: 120; height: 70px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaecee)); background-image: -webkit-linear-gradient(#ffffff, #eaecee); background-image: -moz-linear-gradient(#ffffff, #eaecee); background-image: -o-linear-gradient(#ffffff, #eaecee); background-image: -ms-linear-gradient(#ffffff, #eaecee); background-image: linear-gradient(#ffffff, #eaecee); }
+.expiries { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 120; height: 70px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaecee)); background-image: -webkit-linear-gradient(#ffffff, #eaecee); background-image: -moz-linear-gradient(#ffffff, #eaecee); background-image: -o-linear-gradient(#ffffff, #eaecee); background-image: -ms-linear-gradient(#ffffff, #eaecee); background-image: linear-gradient(#ffffff, #eaecee); }
 .expiries .expiries__more { position: absolute; right: 0; top: 0; height: 100%; border-left: 1px solid #CCCFD2; background: transparent; width: 19px; cursor: pointer; }
 .expiries .expiries__more.is-active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8dadc), color-stop(100%, #e9ecee)); background-image: -webkit-linear-gradient(#d8dadc, #e9ecee); background-image: -moz-linear-gradient(#d8dadc, #e9ecee); background-image: -o-linear-gradient(#d8dadc, #e9ecee); background-image: -ms-linear-gradient(#d8dadc, #e9ecee); background-image: linear-gradient(#d8dadc, #e9ecee); }
 .expiries .expiries__more i { background: url('../img/icons-s6ea4781ce3.png') 0 -645px no-repeat; display: inline-block; width: 7px; height: 4px; position: absolute; top: 50%; margin-top: -3px; left: 50%; margin-left: -4px; }
@@ -214,6 +208,16 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .expiry.is-active .expiry__icon { background: url('../img/icons-s6ea4781ce3.png') 0 -289px no-repeat; display: inline-block; width: 27px; height: 32px; }
 .expiry.is-active .expiry__timeleft b { font-family: "corporate_sdemi",Arial,sans-serif; }
 .expiry.is-active .expiry__timeleft span { opacity: 1; font-family: "corporate_sregular",Arial,sans-serif; }
+
+.recommend { background: #F0F3F5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #DDE0E1; height: 30px; white-space: nowrap; font-size: 0; overflow: hidden; position: absolute; left: 0; right: 0; top: 0; right: 0; z-index: 20; }
+.recommend .recommend__label { height: 30px; line-height: 30px; padding: 0 15px; text-transform: uppercase; font-size: 11px; color: #333; display: inline-block; position: relative; background: #F6F9FA; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #DDE0E1; vertical-align: top; font-family: "corporate_sdemi",Arial,sans-serif; }
+.recommend .recommend__label:before { background: url('../img/icons-s6ea4781ce3.png') 0 -170px no-repeat; display: inline-block; width: 4px; height: 30px; content: ' '; position: absolute; right: -4px; opacity: .2; top: 0; height: 100%; }
+.recommend .recommend__pair { padding: 0 15px 0 12px; display: inline-block; font-size: 12px; vertical-align: top; height: 30px; line-height: 30px; border-right: 1px solid #D8DADC; }
+.recommend .recommend__pairname { color: #000; opacity: .5; font-size: 13px; display: inline-block; font-family: "corporate_sregular",Arial,sans-serif; }
+.recommend .recommend__percent { font-family: "corporate_sbold",Arial,sans-serif; font-size: 13px; color: #000; display: inline-block; }
+.recommend .recommend__status { display: inline-block; font-family: "corporate_sregular",Arial,sans-serif; font-size: 10px; text-transform: uppercase; padding: 0 4px; height: 14px; line-height: 13px; vertical-align: middle; margin: 0 8px; border-radius: 3px; position: relative; top: -2px; color: #fff; }
+.recommend .recommend__status.is-low { background: #F98F96; }
+.recommend .recommend__status.is-high { background: #AACB83; }
 
 .pairs { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding-left: 9px; }
 .pairs .pairs__scroll { position: absolute; bottom: 0; left: 0; top: 0; width: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #E0E2E4; border-right: 1px solid #CACACA; }
