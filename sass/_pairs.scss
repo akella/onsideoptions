@@ -36,7 +36,55 @@
 		overflow: hidden;
 	}
 }
-.pair{
+.pairgroup{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: ' ';
+		width: 20px;
+		right: -5px;
+		top: 0;
+		bottom: 0;
+		border-radius: 10px;
+		z-index: 1;
+		@include border-radius(0 5px 5px / 0 7px 7px);
+		opacity: .5;
+	}
+	//cycle thru color labels and actual colors and gradients
+	@each $s in 
+		red #D4AAA5 #EDE9E8, 
+		yellow #DDC493 #EFEDE6, 
+		green #96B28C #E6EDE6, 
+		azure #8CBAC9 #E4EDF0, 
+		blue #9FB7CB #E6EAEF, 
+		purple #C99CD1 #ECE6EF
+	{
+		&.pairgroup_#{nth($s, 1)}{
+			display: block;
+			&:before{
+				//$newc: #{nth($s, 1)};
+				background-color: #{nth($s, 2)};
+			}
+			.pair{
+				border-right-color: #{nth($s, 2)};
+				//$a: lighten(#{nth($s, 3)}, 20%);
+				// @if(#{nth($s, 1)}==red){
+				// 	background: red;
+				// 	-webkit-transform:scale(2);
+				// }
+				@include background-image(linear-gradient(#fff, red));
+			}
+		}
+	}
+	$op: 1; 
+	&.pairgroup_red .pair{@include background-image(linear-gradient(#fff, rgba(#EDE9E8,$op)));}
+	&.pairgroup_yellow .pair{@include background-image(linear-gradient(#fff, rgba(#EFEDE6,$op)));}
+	&.pairgroup_green .pair{@include background-image(linear-gradient(#fff, rgba(#E6EDE6,$op)));}
+	&.pairgroup_azure .pair{@include background-image(linear-gradient(#fff, rgba(#E4EDF0,$op)));}
+	&.pairgroup_blue .pair{@include background-image(linear-gradient(#fff, rgba(#E6EAEF,$op)));}
+	&.pairgroup_purple .pair{@include background-image(linear-gradient(#fff, rgba(#ECE6EF,$op)));}
+}
+.pairgroup .pair{
 	height: 55px;
 	border-bottom: 1px solid #E2DDDD;
 	@include background-image(linear-gradient(#fff, #EFF0F1));
@@ -114,6 +162,7 @@
 		border-right: none;
 		//@include background-image(linear-gradient(#fff, #C8CED2));
 		border-bottom-color: #C8CED2;
+		border-bottom: none;
 		@include si(pair_active);
 		.pair__name{
 			opacity: 1;
@@ -125,39 +174,5 @@
 }
 
 
-.pairgroup{
-	position: relative;
-	&:before{
-		position: absolute;
-		content: ' ';
-		width: 20px;
-		right: -5px;
-		top: 0;
-		bottom: 0;
-		border-radius: 10px;
-		z-index: 1;
-		@include border-radius(0 5px 5px / 0 7px 7px);
-		opacity: .5;
-	}
-	//cycle thru color labels and actual colors and gradients
-	@each $s in 
-		red #D4AAA5 #EDE9E8, 
-		yellow #DDC493 #EFEDE6, 
-		green #96B28C #E6EDE6, 
-		azure #8CBAC9 #E4EDF0, 
-		blue #9FB7CB #E6EAEF, 
-		purple #C99CD1 #ECE6EF
-	{
-		&.pairgroup_#{nth($s, 1)}{
-			display: block;
-			&:before{
-				//$newc: #{nth($s, 1)};
-				background-color: #{nth($s, 2)};
-			}
-			.pair{
-				border-right-color: #{nth($s, 2)};
-				//@include background-image(linear-gradient(#fff, #{nth($s, 3)}));
-			}
-		}
-	}
-}
+
+

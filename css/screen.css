@@ -224,44 +224,50 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .pairs .pairs__thumb { background: url('../img/icons-s6ea4781ce3.png') 0 -108px no-repeat; display: inline-block; width: 6px; height: 35px; display: inline-block; margin-left: 1px; margin-top: 1px; cursor: pointer; position: absolute; }
 .pairs .pairs__wrap { position: absolute; left: 9px; top: 0; bottom: 0; right: -20px; padding-right: 20px; overflow: hidden; }
 
-.pair { height: 55px; border-bottom: 1px solid #E2DDDD; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eff0f1)); background-image: -webkit-linear-gradient(#ffffff, #eff0f1); background-image: -moz-linear-gradient(#ffffff, #eff0f1); background-image: -o-linear-gradient(#ffffff, #eff0f1); background-image: -ms-linear-gradient(#ffffff, #eff0f1); background-image: linear-gradient(#ffffff, #eff0f1); cursor: pointer; position: relative; border-right: 1px solid #D2D5D7; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 14px; z-index: 2; }
-.pair .pair__name { font-size: 13px; opacity: .5; color: #000; text-transform: uppercase; display: table-cell; vertical-align: middle; left: 14px; top: 0px; font-family: "corporate_sdemi",Arial,sans-serif; line-height: 1; top: 0; height: 55px; }
-.pair .pair__percent { position: absolute; top: 0; left: 169px; width: 86px; font-family: "corporate_slight",Arial,sans-serif; text-align: right; font-size: 25px; color: #000; line-height: 55px; height: 55px; }
-.pair .pair__percent.is-red { color: #f4464f; }
-.pair .pair__quo { position: absolute; left: 122px; top: 0; width: 48px; text-align: left; height: 55px; line-height: 1; font-size: 11px; opacity: .4; }
-.pair .pair__quo div { display: table-cell; vertical-align: middle; height: 55px; }
-.pair .pair__instrument { position: absolute; left: 100px; top: 23px; display: block; width: 10px; height: 10px; background: red; }
-.pair.pair_over .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -578px no-repeat; display: inline-block; width: 5px; height: 10px; }
-.pair.pair_under .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -659px no-repeat; display: inline-block; width: 5px; height: 10px; }
-.pair.pair_highline .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -502px no-repeat; display: inline-block; width: 9px; height: 9px; }
-.pair.pair_lowline .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -540px no-repeat; display: inline-block; width: 9px; height: 9px; }
-.pair.pair_hightouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -521px no-repeat; display: inline-block; width: 9px; height: 9px; }
-.pair.pair_lowtouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -559px no-repeat; display: inline-block; width: 9px; height: 9px; }
-.pair.pair_doublenotouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -457px no-repeat; display: inline-block; width: 11px; height: 12px; }
-.pair.pair_tunnel .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -728px no-repeat; display: inline-block; width: 11px; height: 10px; }
-.pair.pair_overtugofwar .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -598px no-repeat; display: inline-block; width: 5px; height: 9px; }
-.pair.pair_undertugofwar .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -679px no-repeat; display: inline-block; width: 5px; height: 9px; }
-.pair.is-active { margin-right: -24px; border-right: none; border-bottom-color: #C8CED2; background: url('../img/icons-s6ea4781ce3.png') 0 0 no-repeat; }
-.pair.is-active .pair__name { opacity: 1; }
-.pair.is-active .pair__percent { font-family: "corporate_sdemi",Arial,sans-serif; }
-
 .pairgroup { position: relative; }
 .pairgroup:before { position: absolute; content: ' '; width: 20px; right: -5px; top: 0; bottom: 0; border-radius: 10px; z-index: 1; -webkit-border-radius: 0 5px 5px/0 7px 7px; -moz-border-radius: 0 5px 5px/0 7px 7px; -ms-border-radius: 0 5px 5px/0 7px 7px; -o-border-radius: 0 5px 5px/0 7px 7px; border-radius: 0 5px 5px/0 7px 7px; opacity: .5; }
 .pairgroup.pairgroup_red { display: block; }
 .pairgroup.pairgroup_red:before { background-color: #d4aaa5; }
-.pairgroup.pairgroup_red .pair { border-right-color: #d4aaa5; }
+.pairgroup.pairgroup_red .pair { border-right-color: #d4aaa5; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
 .pairgroup.pairgroup_yellow { display: block; }
 .pairgroup.pairgroup_yellow:before { background-color: #ddc493; }
-.pairgroup.pairgroup_yellow .pair { border-right-color: #ddc493; }
+.pairgroup.pairgroup_yellow .pair { border-right-color: #ddc493; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
 .pairgroup.pairgroup_green { display: block; }
 .pairgroup.pairgroup_green:before { background-color: #96b28c; }
-.pairgroup.pairgroup_green .pair { border-right-color: #96b28c; }
+.pairgroup.pairgroup_green .pair { border-right-color: #96b28c; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
 .pairgroup.pairgroup_azure { display: block; }
 .pairgroup.pairgroup_azure:before { background-color: #8cbac9; }
-.pairgroup.pairgroup_azure .pair { border-right-color: #8cbac9; }
+.pairgroup.pairgroup_azure .pair { border-right-color: #8cbac9; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
 .pairgroup.pairgroup_blue { display: block; }
 .pairgroup.pairgroup_blue:before { background-color: #9fb7cb; }
-.pairgroup.pairgroup_blue .pair { border-right-color: #9fb7cb; }
+.pairgroup.pairgroup_blue .pair { border-right-color: #9fb7cb; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
 .pairgroup.pairgroup_purple { display: block; }
 .pairgroup.pairgroup_purple:before { background-color: #c99cd1; }
-.pairgroup.pairgroup_purple .pair { border-right-color: #c99cd1; }
+.pairgroup.pairgroup_purple .pair { border-right-color: #c99cd1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ff0000)); background-image: -webkit-linear-gradient(#ffffff, #ff0000); background-image: -moz-linear-gradient(#ffffff, #ff0000); background-image: -o-linear-gradient(#ffffff, #ff0000); background-image: -ms-linear-gradient(#ffffff, #ff0000); background-image: linear-gradient(#ffffff, #ff0000); }
+.pairgroup.pairgroup_red .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ede9e8)); background-image: -webkit-linear-gradient(#ffffff, #ede9e8); background-image: -moz-linear-gradient(#ffffff, #ede9e8); background-image: -o-linear-gradient(#ffffff, #ede9e8); background-image: -ms-linear-gradient(#ffffff, #ede9e8); background-image: linear-gradient(#ffffff, #ede9e8); }
+.pairgroup.pairgroup_yellow .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efede6)); background-image: -webkit-linear-gradient(#ffffff, #efede6); background-image: -moz-linear-gradient(#ffffff, #efede6); background-image: -o-linear-gradient(#ffffff, #efede6); background-image: -ms-linear-gradient(#ffffff, #efede6); background-image: linear-gradient(#ffffff, #efede6); }
+.pairgroup.pairgroup_green .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6ede6)); background-image: -webkit-linear-gradient(#ffffff, #e6ede6); background-image: -moz-linear-gradient(#ffffff, #e6ede6); background-image: -o-linear-gradient(#ffffff, #e6ede6); background-image: -ms-linear-gradient(#ffffff, #e6ede6); background-image: linear-gradient(#ffffff, #e6ede6); }
+.pairgroup.pairgroup_azure .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e4edf0)); background-image: -webkit-linear-gradient(#ffffff, #e4edf0); background-image: -moz-linear-gradient(#ffffff, #e4edf0); background-image: -o-linear-gradient(#ffffff, #e4edf0); background-image: -ms-linear-gradient(#ffffff, #e4edf0); background-image: linear-gradient(#ffffff, #e4edf0); }
+.pairgroup.pairgroup_blue .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6eaef)); background-image: -webkit-linear-gradient(#ffffff, #e6eaef); background-image: -moz-linear-gradient(#ffffff, #e6eaef); background-image: -o-linear-gradient(#ffffff, #e6eaef); background-image: -ms-linear-gradient(#ffffff, #e6eaef); background-image: linear-gradient(#ffffff, #e6eaef); }
+.pairgroup.pairgroup_purple .pair { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ece6ef)); background-image: -webkit-linear-gradient(#ffffff, #ece6ef); background-image: -moz-linear-gradient(#ffffff, #ece6ef); background-image: -o-linear-gradient(#ffffff, #ece6ef); background-image: -ms-linear-gradient(#ffffff, #ece6ef); background-image: linear-gradient(#ffffff, #ece6ef); }
+
+.pairgroup .pair { height: 55px; border-bottom: 1px solid #E2DDDD; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eff0f1)); background-image: -webkit-linear-gradient(#ffffff, #eff0f1); background-image: -moz-linear-gradient(#ffffff, #eff0f1); background-image: -o-linear-gradient(#ffffff, #eff0f1); background-image: -ms-linear-gradient(#ffffff, #eff0f1); background-image: linear-gradient(#ffffff, #eff0f1); cursor: pointer; position: relative; border-right: 1px solid #D2D5D7; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 14px; z-index: 2; }
+.pairgroup .pair .pair__name { font-size: 13px; opacity: .5; color: #000; text-transform: uppercase; display: table-cell; vertical-align: middle; left: 14px; top: 0px; font-family: "corporate_sdemi",Arial,sans-serif; line-height: 1; top: 0; height: 55px; }
+.pairgroup .pair .pair__percent { position: absolute; top: 0; left: 169px; width: 86px; font-family: "corporate_slight",Arial,sans-serif; text-align: right; font-size: 25px; color: #000; line-height: 55px; height: 55px; }
+.pairgroup .pair .pair__percent.is-red { color: #f4464f; }
+.pairgroup .pair .pair__quo { position: absolute; left: 122px; top: 0; width: 48px; text-align: left; height: 55px; line-height: 1; font-size: 11px; opacity: .4; }
+.pairgroup .pair .pair__quo div { display: table-cell; vertical-align: middle; height: 55px; }
+.pairgroup .pair .pair__instrument { position: absolute; left: 100px; top: 23px; display: block; width: 10px; height: 10px; background: red; }
+.pairgroup .pair.pair_over .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -578px no-repeat; display: inline-block; width: 5px; height: 10px; }
+.pairgroup .pair.pair_under .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -659px no-repeat; display: inline-block; width: 5px; height: 10px; }
+.pairgroup .pair.pair_highline .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -502px no-repeat; display: inline-block; width: 9px; height: 9px; }
+.pairgroup .pair.pair_lowline .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -540px no-repeat; display: inline-block; width: 9px; height: 9px; }
+.pairgroup .pair.pair_hightouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -521px no-repeat; display: inline-block; width: 9px; height: 9px; }
+.pairgroup .pair.pair_lowtouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -559px no-repeat; display: inline-block; width: 9px; height: 9px; }
+.pairgroup .pair.pair_doublenotouch .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -457px no-repeat; display: inline-block; width: 11px; height: 12px; }
+.pairgroup .pair.pair_tunnel .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -728px no-repeat; display: inline-block; width: 11px; height: 10px; }
+.pairgroup .pair.pair_overtugofwar .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -598px no-repeat; display: inline-block; width: 5px; height: 9px; }
+.pairgroup .pair.pair_undertugofwar .pair__instrument { background: url('../img/icons-s6ea4781ce3.png') 0 -679px no-repeat; display: inline-block; width: 5px; height: 9px; }
+.pairgroup .pair.is-active { margin-right: -24px; border-right: none; border-bottom-color: #C8CED2; border-bottom: none; background: url('../img/icons-s6ea4781ce3.png') 0 0 no-repeat; }
+.pairgroup .pair.is-active .pair__name { opacity: 1; }
+.pairgroup .pair.is-active .pair__percent { font-family: "corporate_sdemi",Arial,sans-serif; }
