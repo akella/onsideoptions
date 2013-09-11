@@ -1,108 +1,126 @@
-/*scroll*/
-.jspContainer
-{
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer{
    overflow: hidden;
    position: relative;
+}
 
-}
-.jspPane
-{
+.jspPane{
    position: absolute;
-   width: 100% !important;
+   margin-left: 9px !important;
 }
-.jspVerticalBar
-{
+.jspScrollable:focus,.jspScrollable:active, .scroll:focus{
+   outline: none;
+}
+
+.jspVerticalBar{
    position: absolute;
    top: 0;
-   right: 0;
-   width: 6px;
-   height: 100%;  
-   @include transition(opacity,.2s,linear);
-   -webkit-transform: translateZ(0);
-   transform: translateZ(0);
+   left: 0;
+   height: 100%;
+
+   
+   width: 9px;
+      @include box-sizing(border-box);
+      background: #E0E2E4;
+      border-right: 1px solid #CACACA;
 }
 
-.jspHorizontalBar
-{
+.jspHorizontalBar{
    position: absolute;
-   bottom: 0;
+   bottom: 3px;
    left: 0;
    width: 100%;
    height: 16px;
-   background: red;
-   display: none;
+   //background: red
 }
+
 .jspVerticalBar *,
-.jspHorizontalBar *
-{
+.jspHorizontalBar *{
    margin: 0;
    padding: 0;
 }
-.jspCap
-{
-   display: none;
+
+.jspCap{
+   display: none
 }
-.jspHorizontalBar .jspCap
-{
+
+.jspHorizontalBar .jspCap{
    float: left;
 }
-.jspTrack
-{
-   width: 6px;
-   border: 1px solid #614F42;
-   @include box-sizing(border-box);
+
+.jspTrack{
+   //margin-right: 5px
+   //right: 5px 
    position: relative;
+   
+   //background: #fff 
+   
+   // border-right-width: 2px 
+   //box-shadow: 3px 3px 4px #ccc
+   // border: 1px solid #CCCCCC 
+   // +box-sizing(border-box)
+   // height: 100% !important 
+   // height: 100% 
 }
-.jspDrag
-{
-   position: relative;
-   top: 0;
-   left: -1px;
-   right: -1px;
-   width: 4px;
-   background: #F4A83E;
-   border: 1px solid #F4A83E;
+
+
+.jspDrag{
+   @include s(thumb);
+   display: inline-block;
+   margin-left: 1px;
+   margin-top: 1px;
    cursor: pointer;
+   position: absolute;
 }
+
 .jspHorizontalBar .jspTrack,
-.jspHorizontalBar .jspDrag
-{
+.jspHorizontalBar .jspDrag{
    float: left;
    height: 100%;
 }
-.jspArrow
-{
-   background: #50506d;
+
+.jspArrow{
+   background: rgba(#000, .3);
    text-indent: -20000px;
    display: block;
    cursor: pointer;
+   position: relative;
+   left: -1px ;
 }
-.jspArrow.jspDisabled
-{
-   cursor: default;
-   background: #80808d;
-}
-.jspVerticalBar .jspArrow
-{
-   height: 16px;
-}
-.jspHorizontalBar .jspArrow
-{
-   width: 16px;
-   float: left;
-   height: 100%;
-}
-.jspVerticalBar .jspArrow:focus
-{
+
+// .jspArrow.jspDisabled
+//    cursor: default
+//    background: #80808d
+
+
+// .jspVerticalBar .jspArrow
+//    height: 16px
+
+
+// .jspHorizontalBar .jspArrow
+//    width: 16px
+//    float: left
+//    height: 100%
+
+
+.jspVerticalBar .jspArrow:focus{
    outline: none;
 }
-.jspCorner
-{
+
+.jspCorner{
    background: #eeeef4;
    float: left;
    height: 100%;
 }
-* html .jspCorner
-{
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{
    margin: 0 -3px 0 0;
 }
+
