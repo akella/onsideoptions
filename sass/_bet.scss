@@ -111,11 +111,13 @@
 	}
 }
 .bet__percent{
-	font-size: 128px;
+	//font-size: 128px;
+	padding: 6px 0;
 	color: #E7EAEC;
 	@include bold;
 	line-height: 1;
 	text-shadow:1px 1px 1px #fff, -1px -1px 1px #D7D9DB;
+
 }
 .bet__strikeswrap{
 	margin: 25px 20px 18px 18px;

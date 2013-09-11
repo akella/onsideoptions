@@ -170,7 +170,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .bet__instrument strong { font-weight: normal; font-size: 18px; font-family: "corporate_sdemi",Arial,sans-serif; text-transform: uppercase; }
 .bet__instrument .icon { margin-left: 5px; vertical-align: middle; position: relative; top: -5px; }
 
-.bet__percent { font-size: 128px; color: #E7EAEC; font-family: "corporate_sbold",Arial,sans-serif; line-height: 1; text-shadow: 1px 1px 1px white, -1px -1px 1px #d7d9db; }
+.bet__percent { padding: 6px 0; color: #E7EAEC; font-family: "corporate_sbold",Arial,sans-serif; line-height: 1; text-shadow: 1px 1px 1px white, -1px -1px 1px #d7d9db; }
 
 .bet__strikeswrap { margin: 25px 20px 18px 18px; }
 
