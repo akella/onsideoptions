@@ -96,11 +96,11 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .header .header__livetradesicon { background: url('../img/icons-s6ea4781ce3.png') 0 -479px no-repeat; display: inline-block; width: 16px; height: 13px; margin-right: 15px; }
 .header .header__settledtradesicon { background: url('../img/icons-s6ea4781ce3.png') 0 -433px no-repeat; display: inline-block; width: 16px; height: 14px; margin-right: 15px; }
 .header .header__livetrades, .header .header__settledtrades { width: auto; }
-.header .account { position: relative; padding: 0 24px 0 14px; cursor: pointer; }
+.header .account { position: relative; padding: 0 24px 0 14px; cursor: pointer; float: right; }
 .header .account .account__icon { background: url('../img/icons-s6ea4781ce3.png') 0 -331px no-repeat; display: inline-block; width: 32px; height: 32px; vertical-align: middle; margin-right: 14px; }
 .header .account .account__name { width: 100px; display: inline-block; vertical-align: middle; font-size: 13px; color: #fff; line-height: 1.1; }
 .header .account .account__arrow { background: url('../img/icons-s6ea4781ce3.png') 0 -698px no-repeat; display: inline-block; width: 7px; height: 4px; position: absolute; right: 17px; top: 50%; margin-top: -3px; }
-.header .youramount { padding: 0 42px 0 16px; }
+.header .youramount { padding: 0 42px 0 16px; float: right; }
 .header .youramount .youramount__label { display: inline-block; vertical-align: middle; color: #ABADB0; margin-right: 21px; line-height: 1.1; }
 .header .youramount .youramount__value { display: inline-block; vertical-align: middle; line-height: 1; font-size: 30px; color: #fff; }
 .header .youramount .youramount__arrow { background: url('../img/icons-s6ea4781ce3.png') 0 -698px no-repeat; display: inline-block; width: 7px; height: 4px; position: absolute; right: 17px; top: 50%; margin-top: -3px; }
