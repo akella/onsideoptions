@@ -6,7 +6,18 @@
 	left: 0;
 	padding-right: 21px;
 	z-index: 125;
-	background: #fff;
+	background: #E9EBED;
+	border-bottom: 1px solid #E5E5E5;
+	&:before{
+		content: ' ';
+		width: 10px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 100;
+		@include background-image(linear-gradient(left,rgba(#000, .15), rgba(#000, 0)));
+	}
 
 	//overflow-x:hidden;
 	.marketassets__wrap{
@@ -75,10 +86,17 @@
 	height: $marketassets;
 	padding: 21px 46px 0 21px;
 	@include box-sizing(border-box);
-	border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
 	border-bottom: 1px solid #E5E5E5;
 	position: relative;
 	cursor: pointer;
+	background: #fff;
+	&:first-child{
+		margin-left: 1px;
+	}
+	&:last-child{
+		box-shadow: 5px 0 8px -5px rgba(#000, .3);
+	}
 	&:before{
 		position: absolute;
 		content: ' ';
@@ -113,11 +131,29 @@
 			@include s(down);
 		}
 	}
-	&.is-active, &:hover{
+	&.is-active{
 		background: #F3FAFE;
 		.marketasset__pair{
 			@include demi;
 		}
+		&:before{
+			top: -1px;
+			bottom: -1px;
+			right: -1px;
+			left: -1px;
+			border: 1px solid #00B0F8;
+		}
+		&:after{
+			content: ' ';
+			position: absolute;
+			@include s(marketasset__arrow);
+			bottom: -7px;
+			left: 24px;
+			z-index: 30;
+		}
+	}
+	&:hover{
+		background: #F3FAFE;
 		&:before{
 			top: -1px;
 			bottom: -1px;

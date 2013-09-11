@@ -32,6 +32,8 @@ body{
 	@extend %l;
 	height: $headerarea;
 	bottom: auto;
+	z-index: 1000;
+	height: 60px !important;
 }
 .l-middle{
 	@extend %l;
