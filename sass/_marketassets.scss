@@ -115,6 +115,9 @@
 	}
 	&.is-active, &:hover{
 		background: #F3FAFE;
+		.marketasset__pair{
+			@include demi;
+		}
 		&:before{
 			top: -1px;
 			bottom: -1px;

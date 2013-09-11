@@ -125,6 +125,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .marketasset .marketasset__direction.is-up { background: url('../img/icons-s6ea4781ce3.png') 0 -617px no-repeat; display: inline-block; width: 7px; height: 4px; }
 .marketasset .marketasset__direction.is-down { background: url('../img/icons-s6ea4781ce3.png') 0 -631px no-repeat; display: inline-block; width: 7px; height: 4px; }
 .marketasset.is-active, .marketasset:hover { background: #F3FAFE; }
+.marketasset.is-active .marketasset__pair, .marketasset:hover .marketasset__pair { font-family: "corporate_sdemi",Arial,sans-serif; }
 .marketasset.is-active:before, .marketasset:hover:before { top: -1px; bottom: -1px; right: -1px; left: -1px; border: 1px solid #00B0F8; }
 .marketasset.is-active:after, .marketasset:hover:after { content: ' '; position: absolute; background: url('../img/icons-s6ea4781ce3.png') 0 -153px no-repeat; display: inline-block; width: 11px; height: 7px; bottom: -7px; left: 24px; z-index: 30; }
 
