@@ -225,9 +225,12 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .recommend .recommend__status.is-high { background: #AACB83; }
 
 .pairs { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
-.pairs .pairs__wrap { position: absolute; left: 0px; top: 0; bottom: 0; right: -20px; padding-right: 20px; overflow: hidden; }
+.pairs .pairs__scroll { position: absolute; bottom: 0; left: 0; top: 0; width: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #E0E2E4; border-right: 1px solid #CACACA; opacity: .4; }
+.pairs .pairs__thumb { background: url('../img/icons-s6ea4781ce3.png') 0 -108px no-repeat; display: inline-block; width: 6px; height: 35px; display: inline-block; margin-left: 1px; margin-top: 1px; cursor: pointer; position: absolute; z-index: 1; opacity: .4; }
+.pairs .pairs__wrap { position: absolute; left: 0; top: 0; bottom: 0; right: -20px; overflow: hidden; }
+.pairs .scroll { position: absolute; top: 0; left: 0; width: 100%; bottom: 0; }
 
-.pairgroup { position: relative; margin-right: 16px; }
+.pairgroup { position: relative; margin-right: 16px; width: 270px; }
 .pairgroup:before { position: absolute; content: ' '; width: 20px; right: -5px; top: 0; bottom: 0; border-radius: 10px; z-index: 1; -webkit-border-radius: 0 5px 5px/0 7px 7px; -moz-border-radius: 0 5px 5px/0 7px 7px; -ms-border-radius: 0 5px 5px/0 7px 7px; -o-border-radius: 0 5px 5px/0 7px 7px; border-radius: 0 5px 5px/0 7px 7px; opacity: .5; }
 .pairgroup.pairgroup_red { display: block; }
 .pairgroup.pairgroup_red:before { background-color: #d4aaa5; }

@@ -23,12 +23,10 @@
    top: 0;
    left: 0;
    height: 100%;
-
-   
    width: 9px;
-      @include box-sizing(border-box);
-      background: #E0E2E4;
-      border-right: 1px solid #CACACA;
+   @include box-sizing(border-box);
+   background: #E0E2E4;
+   border-right: 1px solid #CACACA;
 }
 
 .jspHorizontalBar{

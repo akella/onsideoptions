@@ -9,6 +9,8 @@ if ($('.scroll').length > 0) {
 		horizontalArrowPositions: 'split',
 		verticalDragMinHeight: 35,
 		verticalDragMaxHeight: 35,
+		autoReinitialise: true,
+		contentWidth: "300px"
 	});
 };
 
