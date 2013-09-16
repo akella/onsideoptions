@@ -1,6 +1,16 @@
 $(document).ready(function() {
 
 
+// var clock = $('.bet__timer').FlipClock({
+// // ... your options here
+// });
+
+
+var clock = new FlipClock($('.bet__timer'), {
+// ... your options here
+});
+
+
 //scroll
 if ($('.scroll').length > 0) {
 	$('.scroll').jScrollPane({

@@ -7,6 +7,7 @@
 	top: 0;
 	border-left: 1px solid #D8DBDC;
 	box-shadow:0 0 5px rgba(#000, .3);
+	overflow: auto;
 }
 .icon{
 	display: inline-block;
@@ -145,6 +146,14 @@
 			top: -2px;
 			margin-right: 5px;
 		}
+		.bet__nostrike{
+			@include reg;
+			@include opacity(.2);
+			color: #000;
+			font-size: 18px;
+			text-align: center;
+			margin-right: 12px;
+		}
 		small{
 			font-size: 10px;
 			text-transform: uppercase;
@@ -206,5 +215,32 @@
 		line-height: 50px;
 		width: 132px;
 		cursor: pointer;
+	}
+	.createbet__amount{
+		float: left;
+		width: 132px;
+		margin-right: 6px;
+		small{
+			font-size: 10px;
+			text-transform: uppercase;
+			opacity: .3;
+			color: #000;
+			@include reg;
+		}
+		strong{
+			font-weight: normal;
+			@include demi;
+			font-size: 28px;
+			color: #000;
+			white-space:nowrap;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			    text-overflow: ellipsis;
+		}
+	}
+	&.createbet_get{
+		.createbet__submit{
+			@include background-image(linear-gradient(bottom, #CB424D 0%, #EB6B73 100%));
+		}
 	}
 }

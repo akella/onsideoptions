@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.js"></script>
+	<script src="js/flipclock/libs/prefixfree.min.js"></script>
+	<script src="js/flipclock/flipclock.min.js"></script>
 	<script src="js/jscrollpane.js"></script>
 	<script src="js/fittext.js"></script>
 	<script src="js/jquery.mousewheel.js"></script>
@@ -448,6 +450,11 @@ amount</div>
 					<strong>1.425832</strong>
 				</div>
 			</div>
+				
+			<div class="bet__timer">
+				
+			</div>
+
 
 			<div class="bet__instrument">
 				<small>instrument</small>
@@ -467,12 +474,31 @@ amount</div>
 					<div class="arrow is-down"></div>
 					<div class="bet__strikeq">1.539835</div>
 				</div>
+			</div></div>
+			<div class="bet__strikeswrap"><div class="bet__strikes">
+				<div class="bet__strike">
+					<small>Strike1</small>
+					<div class="arrow is-up"></div>
+					<div class="bet__strikeq">1.539835</div>
+				</div>
+				<div class="bet__strike">
+					<small>Strike1</small>
+					<div class="bet__nostrike">No strike</div>
+				</div>
 
 			</div></div>
 
 			<div class="createbet">
 				<input type="text" class="createbet__input" placeholder="Amount">
 				<div class="createbet__submit">Create Bet</div>
+			</div>
+
+			<div class="createbet createbet_get">
+				<div class="createbet__amount">
+					<small>You can get</small>
+					<strong>$ 1570.25</strong>
+				</div>
+				<div class="createbet__submit">Get money</div>
 			</div>
 
 		</div>
