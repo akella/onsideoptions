@@ -1,8 +1,8 @@
 .recommend{
 	background: #F0F3F5;
 	@include box-sizing(border-box);
-	border-bottom: 1px solid #DDE0E1;
-	height: $recommend;
+	//border-bottom: 1px solid #DDE0E1;
+	height: $recommend+1px;
 	white-space:nowrap;
 	font-size: 0;
 	overflow: hidden;
@@ -10,7 +10,7 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	right: 0;
+	bottom: 0;
 	z-index: 20;
 	.recommend__label{
 		height: $recommend;
@@ -44,6 +44,25 @@
 		height: $recommend;
 		line-height: $recommend;
 		border-right: 1px solid #D8DADC;
+		position: relative;
+		cursor: pointer;
+		&:before{
+				content: ' ';
+				position: absolute;
+				top: 0px;
+				left: 0;
+				bottom: 0;
+				right: -1px;
+				border-bottom: 1px solid #DDE0E1; 
+				z-index: 1;
+			}
+		&:hover, &.is-active{
+			z-index: 1000;
+			&:before{
+				background: #FFEEEF;
+				border: 1px solid #F3A5AA; 
+			}
+		}
 	}
 	.recommend__pairname{
 		color: #000;
@@ -51,12 +70,16 @@
 		font-size: 13px;
 		display: inline-block;
 		@include reg;
+		position: relative;
+		z-index: 10;
 	}
 	.recommend__percent{
 		@include bold;
 		font-size: 13px;
 		color: #000;
 		display: inline-block;
+		position: relative;
+		z-index: 10;
 	}
 	.recommend__status{
 		display: inline-block;
@@ -72,6 +95,7 @@
 		position: relative;
 		top: -2px;
 		color: #fff;
+		z-index: 10;
 		&.is-low{
 			background: #F98F96;
 		}

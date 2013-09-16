@@ -36,12 +36,13 @@
 		top: 70px;
 		left: 0;
 		width: $left;
+		box-shadow: 0 5px 5px rgba(#000, .3);
 	}
 	.expiries__less{
 		height: 12px;
 		position: relative;
 		background-color: #373737;
-		@include background-image(linear-gradient(bottom, #e9ebee 0%, #e9ebee 0.22%, #fff 100%));
+		@include background-image(linear-gradient(bottom, #e9ebee 0%, #fff 100%));
 		cursor: pointer;
 		border-right: 1px solid #DADADA;
 		i{
@@ -51,6 +52,9 @@
 			left: 50%;
 			margin-left: -4px;
 			top: 2px;
+		}
+		&:active{
+			@include background-image(linear-gradient(bottom, #fff 0%, #e9ebee 100%));
 		}
 	}
 }
@@ -116,6 +120,15 @@
 	}
 	&:hover{
 		@include background-image(linear-gradient(bottom, #c7cdd2 0%, #fff 100%));
+		.expiry__icon{
+			@include s(watch);
+		}
+		.expiry__timeleft{
+
+			span{
+				opacity: 1;
+			}
+		}
 	}
 	&.is-active{
 		background-color: #f0f5f8;

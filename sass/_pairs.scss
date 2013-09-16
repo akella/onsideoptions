@@ -1,3 +1,4 @@
+
 .pairs{
 	position: absolute;
 	top: 0;
@@ -7,6 +8,18 @@
 	bottom: 0;
 	//padding-right: 17px;
 	// padding-left: 9px;
+	&.is-blur{
+		&:before{
+			content:' ';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: -6px;
+			bottom: 0;
+			background: rgba(#000, .2);
+			z-index: 100;
+		}
+	}
 	
 	.pairs__scroll{
 		position: absolute;
