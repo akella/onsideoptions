@@ -241,3 +241,46 @@
 		}
 	}
 }
+.bigtimer{
+	display: block;
+	margin: 20px 0;
+	overflow: hidden;
+	margin-left: 18px;
+	.bigtimer__time{
+		float: left;
+		padding-top: 15px;
+		margin-right: 7px;
+		width: 86px;
+	}
+	.bigtimer__label{
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #C0C2C2;
+		@include demi;
+		margin-bottom: 6px;
+		text-align: left;
+		display: block;
+	}
+	.bigtimer__digit{
+		width: 40px;
+		height: 54px;
+		border-radius: 10px;
+		background: #2F3541;
+		line-height: 51px;
+		text-align: center;
+		font-size: 44px;
+		color: #FFFFFF;
+		@include demi;
+		float: left;
+		position: relative;
+		margin-right: 3px;
+		&:before{
+			content: ' ';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			border-top: 1px solid rgba(#fff, .4);
+		}
+	}
+}
