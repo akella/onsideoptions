@@ -132,7 +132,7 @@
 		}
 	}
 	&.is-active{
-		background: #F3FAFE;
+		background: #FFFBF3;
 		z-index: 700;
 		.marketasset__pair{
 			@include demi;
@@ -142,7 +142,7 @@
 			bottom: -1px;
 			right: -1px;
 			left: -1px;
-			border: 1px solid #00B0F8;
+			border: 1px solid #FDD47B;
 		}
 		&:after{
 			content: ' ';
@@ -154,13 +154,13 @@
 		}
 	}
 	&:hover{
-		background: #F3FAFE;
+		background: #FFFBF3;
 		&:before{
 			top: -1px;
 			bottom: -1px;
 			right: -1px;
 			left: -1px;
-			border: 1px solid #00B0F8;
+			border: 1px solid #FDD47B;
 		}
 		&:after{
 			content: ' ';

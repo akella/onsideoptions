@@ -59,8 +59,8 @@
 		&:hover, &.is-active{
 			z-index: 1000;
 			&:before{
-				background: #FFEEEF;
-				border: 1px solid #F3A5AA; 
+				background: #FFFBF3;
+				border: 1px solid #FCC64F; 
 			}
 		}
 	}
@@ -100,7 +100,7 @@
 			background: #F98F96;
 		}
 		&.is-high{
-			background: #AACB83;
+			background: #8FC1E5;
 		}
 	}
 }
