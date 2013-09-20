@@ -1,5 +1,5 @@
 .header{
-	@include background-image(linear-gradient(#383D4A, #232B35));
+	@include background-image(linear-gradient(#383838, #2B2B2B));
 	height: $header;
 	@include box-shadow(0 1px 4px rgba(0,0,0,.4));
 	overflow: hidden;
@@ -61,7 +61,7 @@
 		color: #fff;
 		margin-left: 10px;
 		border-radius: 15px;
-		@include background-image(linear-gradient(#F88D94, #DB5B63));
+		@include background-image(linear-gradient(#FCBD36, #FA902D));
 		
 	}
 	.header__tradeicon{
