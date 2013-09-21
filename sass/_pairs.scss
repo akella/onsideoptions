@@ -174,13 +174,17 @@
 		display: block;
 		width: 10px;
 		height: 10px;
-		background: red;
 	}
 	@each $s in over, under, highline, lowline, hightouch, lowtouch, 
 	doublenotouch, tunnel, overtugofwar,undertugofwar{
 		&.pair_#{$s}{
 			.pair__instrument{
-				@include s(pair_#{$s});
+				text-align: center;
+				width: 15px;
+				&:before{
+					content: ' ';
+					@include s(pair_#{$s});
+				}
 			}
 		}
 	}

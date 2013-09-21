@@ -281,17 +281,27 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .pairgroup .pair .pair__percent.is-red { color: #f4464f; }
 .pairgroup .pair .pair__quo { position: absolute; left: 122px; top: 0; width: 48px; text-align: left; height: 55px; line-height: 1; font-size: 11px; opacity: .4; }
 .pairgroup .pair .pair__quo div { display: table-cell; vertical-align: middle; height: 55px; }
-.pairgroup .pair .pair__instrument { position: absolute; left: 100px; top: 23px; display: block; width: 10px; height: 10px; background: red; }
-.pairgroup .pair.pair_over .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -646px no-repeat; display: inline-block; width: 5px; height: 10px; }
-.pairgroup .pair.pair_under .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -708px no-repeat; display: inline-block; width: 5px; height: 10px; }
-.pairgroup .pair.pair_highline .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -587px no-repeat; display: inline-block; width: 12px; height: 10px; }
-.pairgroup .pair.pair_lowline .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -627px no-repeat; display: inline-block; width: 9px; height: 9px; }
-.pairgroup .pair.pair_hightouch .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -607px no-repeat; display: inline-block; width: 14px; height: 10px; }
-.pairgroup .pair.pair_lowtouch .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -537px no-repeat; display: inline-block; width: 14px; height: 10px; }
-.pairgroup .pair.pair_doublenotouch .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -454px no-repeat; display: inline-block; width: 12px; height: 10px; }
-.pairgroup .pair.pair_tunnel .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -557px no-repeat; display: inline-block; width: 5px; height: 20px; }
-.pairgroup .pair.pair_overtugofwar .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -494px no-repeat; display: inline-block; width: 13px; height: 10px; }
-.pairgroup .pair.pair_undertugofwar .pair__instrument { background: url('../img/icons-sce81236f81.png') 0 -474px no-repeat; display: inline-block; width: 13px; height: 10px; }
+.pairgroup .pair .pair__instrument { position: absolute; left: 100px; top: 23px; display: block; width: 10px; height: 10px; }
+.pairgroup .pair.pair_over .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_over .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -646px no-repeat; display: inline-block; width: 5px; height: 10px; }
+.pairgroup .pair.pair_under .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_under .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -708px no-repeat; display: inline-block; width: 5px; height: 10px; }
+.pairgroup .pair.pair_highline .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_highline .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -587px no-repeat; display: inline-block; width: 12px; height: 10px; }
+.pairgroup .pair.pair_lowline .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_lowline .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -627px no-repeat; display: inline-block; width: 9px; height: 9px; }
+.pairgroup .pair.pair_hightouch .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_hightouch .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -607px no-repeat; display: inline-block; width: 14px; height: 10px; }
+.pairgroup .pair.pair_lowtouch .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_lowtouch .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -537px no-repeat; display: inline-block; width: 14px; height: 10px; }
+.pairgroup .pair.pair_doublenotouch .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_doublenotouch .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -454px no-repeat; display: inline-block; width: 12px; height: 10px; }
+.pairgroup .pair.pair_tunnel .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_tunnel .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -557px no-repeat; display: inline-block; width: 5px; height: 20px; }
+.pairgroup .pair.pair_overtugofwar .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_overtugofwar .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -494px no-repeat; display: inline-block; width: 13px; height: 10px; }
+.pairgroup .pair.pair_undertugofwar .pair__instrument { text-align: center; width: 15px; }
+.pairgroup .pair.pair_undertugofwar .pair__instrument:before { content: ' '; background: url('../img/icons-sce81236f81.png') 0 -474px no-repeat; display: inline-block; width: 13px; height: 10px; }
 .pairgroup .pair.is-active { margin-right: -24px; border-right: none; border-bottom-color: #C8CED2; border-bottom: none; background: url('../img/icons-sce81236f81.png') 0 0 no-repeat; }
 .pairgroup .pair.is-active .pair__name { opacity: 1; }
 .pairgroup .pair.is-active .pair__percent { font-family: "corporate_sdemi",Arial,sans-serif; }
