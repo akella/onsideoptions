@@ -171,7 +171,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .marketasset:hover:before { top: -1px; bottom: -1px; right: -1px; left: -1px; border: 1px solid #FDD47B; }
 .marketasset:hover:after { content: ' '; position: absolute; background: url('../img/icons-se5804333eb.png') 0 -191px no-repeat; display: inline-block; width: 13px; height: 7px; bottom: -7px; left: 24px; z-index: 30; }
 
-.bet { background: #F0F3F5; position: absolute; left: 0; right: 0; bottom: 0; top: 0; border-left: 1px solid #D8DBDC; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); overflow: auto; }
+.bet { background: #F0F3F5; position: absolute; left: 0; right: 0; bottom: 0; top: 0; border-left: 1px solid #D8DBDC; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); overflow: hidden; }
 
 .icon { display: inline-block; }
 
