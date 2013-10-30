@@ -80,6 +80,11 @@
 		@extend %headerblock;
 		width: auto;
 	}
+	.header__settledtrades{
+		&.is-active{
+			//@include background-image(linear-gradient(#232b36, #383d4b));
+		}
+	}
 	.account{
 		position: relative;
 		@extend %headerblock;

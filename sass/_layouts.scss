@@ -40,6 +40,9 @@ body{
 	top: $headerarea;
 	bottom: $footer;
 }
+.l-middle_full {
+	top: $header;
+}
 .l-pairs{
 	@extend %l;
 	width: $left;
