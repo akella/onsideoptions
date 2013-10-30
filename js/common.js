@@ -36,7 +36,7 @@ function table() {
 	var table_row = $('.table__row');
 	var table_head = $('.table__header');
 	table_row.find('td').each(function() {
-		var width = $(this).outerWidth();
+		var width = $(this).width();
 		var attr = $(this).attr('data-col');
 		table_head.find('.'+attr).width(width);
 	});

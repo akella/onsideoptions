@@ -22,7 +22,8 @@
 		position: relative;
 		display: inline-block;
 		height: 44px;
-		box-shadow: 1px 0 0 0 #dfe1e2;
+		padding: 0 18px;
+		border-left: 1px solid #dfe1e2;
 		vertical-align: top;
 		@include reg();
 		text-align: center;
@@ -32,6 +33,9 @@
 		line-height: 44px;
 		&:last-child{
 			box-shadow: none;
+		}
+		&:nth-child(2), &:nth-child(5){
+			text-align: left;
 		}
 		&:after{
 			content: "";
@@ -44,6 +48,9 @@
 		}
 	}
 }
+.table__in{
+	padding-top: 44px;
+}
 .table__content{
 	width: 100%;
 	border-spacing: 0;
@@ -51,10 +58,10 @@
 	color: #7b7c7d;
 	td{
 		height: 40px;
-		padding: 0 10px;
+		padding: 0 18px;
 		border-left: 1px solid #eeefef;
 		text-align: center;
-		&:nth-child(2){
+		&:nth-child(2), &:nth-child(5){
 			text-align: left;
 		}
 	}
@@ -100,4 +107,77 @@
 }
 .table__status-knocked{
 	color: #ec7379;
+}
+.table__type{
+	position: relative;
+	padding-right: 15px;
+	.ico{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -5px;
+	}
+	.ico_tunnel-tug{
+		margin-top: -10px;
+	}
+	.ico_over-tug, .ico_under-tug, .ico_tunnel-tug{
+		right: 4px;
+	}
+}
+.ico_over-tug{
+	@include s(pair_over)
+}
+.ico_under-tug{
+	@include s(pair_under)
+}
+.ico_tunnel-tug{
+	@include s(pair_tunnel)
+}
+.ico_low-tug{
+	@include s(pair_lowtouch)
+}
+.ico_high-tug{
+	@include s(pair_hightouch)
+}
+.ico_high-tug{
+	@include s(pair_hightouch)
+}
+.ico_over-tug-war{
+	@include s(pair_overtugofwar)
+}
+.ico_under-tug-war{
+	@include s(pair_undertugofwar)
+}
+
+
+
+//stake
+.stake{
+	display: table;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 74px;
+	@include background(linear-gradient(bottom, #f1f3f5, #fff));
+	box-shadow: 0 -5px 5px rgba(0,0,0,.07);
+	border-top: 1px solid #d9dbdd;
+}
+.stake__row{
+	display: table-row;
+}
+.stake__cell{
+	display: table-cell;
+}
+.stake__label{
+	@include reg();
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #c7c7c8;
+}
+.stake__value{
+	@include reg();
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #c7c7c8;
 }
