@@ -71,10 +71,71 @@
 		<!-- end trade -->
 
 		<!-- begin live trades -->
-		<div class="header__livetrades">
-			<i class="header__livetradesicon"></i>
-			<h3>Live Bets</h3>
-			<span class="header__numbericon">2</span>
+		<div class="header__livetrades is-active">
+			<div class="header__livetrades-head">
+				<i class="header__livetradesicon"></i>
+				<h3>Live Bets</h3>
+				<span class="header__numbericon">2</span>
+			</div>			
+			<div class="header__livetrades-drop">
+				<!-- BEGIN .livetrades-table -->
+				<div class="livetrades-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Bet ID</th>
+								<th>Asset</th>
+								<th>Stake</th>
+								<th>Type</th>
+								<th>Money Return</th>           
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>140</td>
+								<td>GBP to USD</td>
+								<td><div class="livetrades-table__money">$500</div></td>
+								<td><div class="trades-type">Under Tug Of War Bet<i class="ico ico_high-tug"></i></div></td>
+								<td>
+									<div class="livetrades-table__money">$650</div>
+									<div class="livetrades-table__currency">$</div>
+								</td>
+							</tr>
+							<tr>
+								<td>140</td>
+								<td>GBP to USD</td>
+								<td><div class="livetrades-table__money">$500</div></td>
+								<td><div class="trades-type">Under Tug Of War Bet<i class="ico ico_under-tug-war"></i></div></td>
+								<td>
+									<div class="livetrades-table__money">$650</div>
+									<div class="livetrades-table__currency">$</div>
+								</td>
+							</tr>
+							<tr>
+								<td>140</td>
+								<td>GBP to USD</td>
+								<td><div class="livetrades-table__money">$500</div></td>
+								<td><div class="trades-type">Under Tug Of War Bet<i class="ico ico_high-tug"></i></div></td>
+								<td>
+									<div class="livetrades-table__money">$650</div>
+									<div class="livetrades-table__currency">$</div>
+								</td>
+							</tr>
+							<tr>
+								<td>140</td>
+								<td>GBP to USD</td>
+								<td><div class="livetrades-table__money">$500</div></td>
+								<td><div class="trades-type">Under Tug Of War Bet<i class="ico ico_under-tug-war"></i></div></td>
+								<td>
+									<div class="livetrades-table__money">$650</div>
+									<div class="livetrades-table__currency">$</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- END .livetrades-table -->
+			</div>
 		</div>
 		<!-- end live trades -->
 
@@ -129,7 +190,7 @@
 	<!-- BEGIN .stake -->
 	<div class="stake">
 		<div class="stake__row">
-			<div class="stake__cell">
+			<div class="stake__cell is-disabled is-arr">
 				<div class="stake__item">
 					<div class="stake__label">Bet ID</div>
 					<div class="stake__value">204</div>
@@ -153,25 +214,60 @@
 					<div class="stake__value">90.5%</div>
 				</div>
 			</div>
-			<div class="stake__cell">
+			<div class="stake__cell is-disabled">
 				<div class="stake__item">
 					<div class="stake__label">Type</div>
-					<div class="stake__type">Over Tug Of War Bet<i class="ico ico_over-tug"></i></div>
+					<div class="stake__value">
+						<div class="trades-type">Over Tug Of War Bet<i class="ico ico_high-tug"></i></div>
+					</div>					
 				</div>
 			</div>
-			<div class="stake__cell">
+			<div class="stake__cell is-disabled">
 				<div class="stake__item">
 					<div class="stake__label">Strike 1</div>
 					<div class="stake__value">1.5398365</div>
 				</div>
 			</div>
-			<div class="stake__cell">
+			<div class="stake__cell is-disabled">
 				<div class="stake__item">
 					<div class="stake__label">Strike 2</div>
 					<div class="stake__value">1.5398365</div>
 				</div>
 			</div>
-
+			<div class="stake__cell">
+				<div class="stake__item">
+					<div class="stake__label">Current price</div>
+					<div class="stake__value">1.5398365</div>
+				</div>
+			</div>
+			<div class="stake__cell">
+				<!-- BEGIN .clock -->
+				<div class="clock">
+					<div class="clock__time clock__hours">
+						<div class="clock__label">hours</div>
+						<div class="clock__digit">0</div>
+						<div class="clock__digit">1</div>
+					</div>
+					<div class="clock__time clock__minutes">
+						<div class="clock__label">minutes</div>
+						<div class="clock__digit">0</div>
+						<div class="clock__digit">1</div>
+					</div>
+					<div class="clock__time clock__seconds">
+						<div class="clock__label">seconds</div>
+						<div class="clock__digit">0</div>
+						<div class="clock__digit">1</div>
+					</div>
+				</div>
+				<!-- END .clock -->
+			</div>
+			<div class="stake__cell">
+				<div class="stake__item">
+					<div class="stake__label">You can get</div>
+					<div class="stake__value">$ 2000.25</div>
+				</div>
+				<div class="btn btn_red">Get money</div>
+			</div>
 		</div>
 	</div>
 	<!-- END .stake -->

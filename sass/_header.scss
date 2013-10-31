@@ -47,8 +47,7 @@
 		text-transform: uppercase;
 	}
 	i{
-		vertical-align: middle;
-		
+		vertical-align: middle;		
 	}
 	.header__numbericon{
 		display: inline-block;
@@ -61,8 +60,7 @@
 		color: #fff;
 		margin-left: 10px;
 		border-radius: 15px;
-		@include background-image(linear-gradient(#FCBD36, #FA902D));
-		
+		@include background-image(linear-gradient(#FCBD36, #FA902D));		
 	}
 	.header__tradeicon{
 		@include s(trades);
@@ -79,11 +77,35 @@
 	.header__livetrades, .header__settledtrades{
 		@extend %headerblock;
 		width: auto;
-	}
-	.header__settledtrades{
 		&.is-active{
-			//@include background-image(linear-gradient(#232b36, #383d4b));
+			position: relative;
+			@include background-image(linear-gradient(#232b36, #383d4b));
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -1px;
+				right: -1px;
+				height: 5px;
+				background-color: #ec7279;
+			}
 		}
+	}
+	.header__livetrades{
+		padding: 0;
+	}
+	.header__livetrades-head{
+		padding: 0 17px;
+	}
+	.header__livetrades-drop{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 450px;
+		padding-top: 15px;
+		border-radius: 0 0 3px 3px;
+		background-color: #373d49;
+		box-shadow: 8px 13px 21px rgba(0,0,0,.18);
 	}
 	.account{
 		position: relative;
@@ -403,4 +425,5 @@
 		z-index: 200;
 	}
 }
+
 
