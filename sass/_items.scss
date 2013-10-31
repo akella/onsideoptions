@@ -1,0 +1,135 @@
+.slider{
+	position: relative;
+	padding: 10px;
+	background: #fff;
+	border-radius: 3px;
+}
+.slider__nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 20px;
+	background: #e2e7eb;
+	border-radius: 0 3px;
+}
+.slider__prev, .slider__next{
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	i{
+		position: absolute;
+		top: 5px;
+		&:active{
+			top: 7px;
+		}
+	}
+}
+.slider__prev{
+	i{
+		left: 10px;
+		@include s(slider-prev);
+	}
+}
+.slider__next{
+	i{
+		left: 5px;
+		@include s(slider-next);
+	}
+}
+
+//select
+.select{
+	position: relative;
+	width: 77px;
+	height: 30px;
+	border: 1px solid #DFDFDF;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.07);
+	select{
+		opacity: 0;
+		-webkit-appearance: none;
+		position: absolute;
+		left: 0px;
+		top: 0;
+		width: 100%;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+	}
+}
+.select__value{
+	position: relative;
+	height: 30px;
+	padding-left: 8px;
+	line-height: 30px;
+	font-size: 13px;
+	color: #000;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 13px;
+		right: 9px;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 4px 4px 0 4px;
+		border-color: #000 transparent transparent transparent;
+	}
+}
+
+//metal
+.metal__head{
+	margin-bottom: 13px;
+	@extend %clr;
+	.select{
+		float: left;
+	}
+}
+.metal__title{
+	float: left;
+	width: 100px;
+	@include demi();
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	line-height: .9;
+}
+.metal__list{
+	li{
+		padding: 6px 10px;
+		background: #ebeff1;
+		list-style: none;
+		@extend %clr;
+		font-size: 13px;
+		&:nth-child(2n){
+			background: #fff;
+		}
+	}
+	span{
+		float: right;
+		width: 48px;
+		margin-top: 1px;
+		font-size: 11px;
+		color: #9ea1a2;
+		text-align: right;
+	}
+}
+.metal__arr{
+	float: right;
+	width: 0px;
+	height: 0px;
+	margin: 6px 0 0 10px;
+	border-style: solid;
+	&.is-up{	
+		border-width: 0 4px 4px 4px;
+		border-color: transparent transparent #6dab00 transparent;
+	}
+	&.is-down{
+		border-width: 4px 4px 0 4px;
+		border-color: #ff0000 transparent transparent transparent;
+	}
+}
