@@ -167,27 +167,25 @@
 			height: 55px;
 		}
 	}
-	.pair__instrument{
+	.icon{
 		position: absolute;
 		left: 100px;
-		top: 20px;
-		display: block;
-		width: 10px;
-		height: 10px;
+		top: 50%;
+		margin-top: -10px;
 	}
-	@each $s in over, under, highline, lowline, hightouch, lowtouch, 
-	doublenotouch, tunnel, overtugofwar,undertugofwar{
-		&.pair_#{$s}{
-			.pair__instrument{
-				text-align: center;
-				width: 15px;
-				&:before{
-					content: ' ';
-					@include s(pair_#{$s});
-				}
-			}
-		}
-	}
+	// @each $s in over, under, highline, lowline, hightouch, lowtouch, 
+	// doublenotouch, tunnel, overtugofwar,undertugofwar{
+	// 	&.pair_#{$s}{
+	// 		.pair__instrument{
+	// 			text-align: center;
+	// 			width: 15px;
+	// 			&:before{
+	// 				content: ' ';
+	// 				@include s(pair_#{$s});
+	// 			}
+	// 		}
+	// 	}
+	// }
 	&.is-active{
 		margin-right: -24px;
 		border-right: none;

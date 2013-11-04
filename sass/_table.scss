@@ -309,17 +309,11 @@
 .trades-type{
 	position: relative;
 	padding-right: 25px;
-	.ico{
+	.icon{
 		position: absolute;
 		top: 50%;
 		right: 0;
-		margin-top: -5px;
-	}
-	.ico_tunnel-tug{
 		margin-top: -10px;
-	}
-	.ico_over-tug, .ico_under-tug, .ico_tunnel-tug{
-		right: 4px;
 	}
 }
 .ico_over-tug{
