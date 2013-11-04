@@ -27,7 +27,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 
 .l-middle { top: 160px; bottom: 40px; }
 
-.l-page { top: 60px; bottom: 40px; }
+.l-page { top: -100px; }
 .l-page .l-showpair { left: 0; right: 0; bottom: 75px; }
 
 .l-pairs { width: 278px; }

@@ -42,8 +42,7 @@ body{
 }
 .l-page {
 	@extend %l;
-  top: $header;
-  bottom: $footer;
+  top: -100px;
   .l-showpair{
   	left: 0;
   	right: 0;
