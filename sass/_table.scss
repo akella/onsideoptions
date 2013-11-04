@@ -1,11 +1,11 @@
-.table, .table__in{
+.table-settled, .table-settled__in{
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 }
-.table__header{
+.table-settled__header{
 	position: absolute;
 	top: 0;
 	left: 9px;
@@ -48,10 +48,10 @@
 		}
 	}
 }
-.table__in{
+.table-settled__in{
 	padding-top: 44px;
 }
-.table__content{
+.table-settled__content{
 	width: 100%;
 	border-spacing: 0;
 	font-size: 12px;
@@ -88,11 +88,11 @@
 						left: -1px;
 						bottom: -1px;
 						width: 5px;
-						@include background-image(linear-gradient(bottom, #d75b61 0%, #f38d93 100%));
+						@include background-image(linear-gradient(top, #fdbe01 0%, #ff9300 100%));
 					}
 				}
 			}
-			.table__color-black{
+			.table-settled__color-black{
 				font-size: 17px;
 			}
 		}
@@ -101,14 +101,14 @@
 		
 	}
 }
-.table__color-black{
+.table-settled__color-black{
 	min-width: 60px;
 	color: #2f3542;
 }
-.table__status-expired{
+.table-settled__status-expired{
 	color: #74963f;
 }
-.table__status-knocked{
+.table-settled__status-knocked{
 	color: #ec7379;
 }
 

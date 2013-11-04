@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-
-// var clock = $('.bet__timer').FlipClock({
-// // ... your options here
-// });
-
-
-// var clock = new FlipClock($('.bet__timer'), {
-//  ... your options here
-// });
-
-
 //scroll
 if ($('.scroll').length > 0) {
 	$('.scroll').jScrollPane({
@@ -24,20 +13,28 @@ if ($('.scroll').length > 0) {
 	});
 };
 
-if ($('.bet__percent').length > 0) {
-	textFit($(".bet__percent")[0], {minFontSize:10, maxFontSize: 250,widthOnly: true})
+//general scroll
+if ($('.js-scroll').length > 0) {
+	$('.js-scroll').jScrollPane({
+		showArrows: false,
+		verticalDragMinHeight: 35,
+		verticalDragMaxHeight: 35,
+		autoReinitialise: true
+	});
 };
 
+if ($(".bet__percent").length>0) {
+	textFit($(".bet__percent")[0], {minFontSize:10, maxFontSize: 250,widthOnly: true})
+};
 //$(".bet__percent").textfill({ maxFontPixels: 206 });
-
 
 //table
 function table() {
-	var table_row = $('.table__row');
-	var table_head = $('.table__header');
+	var table_row = $('.table-settled__row');
+	var table_head = $('.table-settled__header');
 	table_row.find('td').each(function() {
 		var width = $(this).width();
-		var attr = $(this).attr('data-col');
+		var attr = $(this).attr('class');
 		table_head.find('.'+attr).width(width);
 	});
 }

@@ -1,5 +1,5 @@
 .footer{
-	background: #2F3541;
+	background: #353535;
 	height: $footer;
 	font-size: 11px;
 	.footer__copy{
@@ -14,8 +14,8 @@
 	.footer__nav{
 		list-style: none;
 		float: left;
-		border-left: 1px solid #22272F;
-		box-shadow: -1px 0 0 #464B56;
+		border-left: 1px solid #242424;
+		box-shadow: -1px 0 0 #484848;
 		li{
 			float: left;
 		}
@@ -27,7 +27,7 @@
 			text-decoration: none;
 			color: #fff;
 			padding: 0 17px;
-			border-right: 1px solid #464B56;
+			border-right: 1px solid #484848;
 			box-shadow: 1px 0 0 #22272F;
 		}
 	}
