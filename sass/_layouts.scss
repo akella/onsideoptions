@@ -4,6 +4,7 @@ $headerarea: 160px;
 $recommend: 30px; //recommend area height
 $marketassets: 70px;
 $expiries: 70px;
+$stake: 75px;
 
 $left: 278px; // left sidebar(Pairs) width
 $right: 309px; // right sidebar (Bet) width
@@ -37,13 +38,14 @@ body{
 }
 .l-middle{
 	@extend %l;
-	top: $headerarea;
+	top: $header;
 	bottom: $footer;
 }
 .l-page {
 	@extend %l;
   top: -100px;
   .l-showpair{
+  	top: 100px;
   	left: 0;
   	right: 0;
   	bottom: 75px;
@@ -51,16 +53,19 @@ body{
 }
 .l-pairs{
 	@extend %l;
+	top: $recommend + $marketassets;
 	width: $left;
 }
 .l-bet{
 	@extend %l;
-	width: $right;
+	top: 0;	
 	left: auto;
 	right: 0;
+	width: $right;
 }
 .l-showpair{
 	@extend %l;
+	top: $recommend + $marketassets;
 	left: $left;
 	right: $right;
 	//debug
@@ -69,10 +74,14 @@ body{
 		top: 0;left: 0;right: 0;bottom: 0;display: block;width: 100%;height: 100%;
 	}
 }
+.l-graph{
+	@extend %l;
+	bottom: $stake;
+}
 .l-marketassets{
 	position: absolute;
 	z-index: 50;
-	top: 90px - 160px;
+	top: $recommend;
 	right: 0;
 	left: $left;
 	height: $marketassets;
@@ -81,12 +90,12 @@ body{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -160px + 60px;
+	top: 0;
 	height: 30px;
 }
 .l-expiries{
 	position: absolute;
-	top: 90px - 160px;
+	top: $recommend;
 	left: 0;
 	width: $left;
 }
