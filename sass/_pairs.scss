@@ -79,11 +79,11 @@
 	}
 	//cycle thru color labels and actual colors and gradients
 	@each $s in 
-		red #D4AAA5 #EDE9E8, 
-		yellow #DDC493 #EFEDE6, 
-		green #96B28C #E6EDE6, 
-		azure #8CBAC9 #E4EDF0, 
-		blue #9FB7CB #E6EAEF, 
+		red #D4AAA5 #EDE9E8,
+		yello #DDC493 #EFEDE6,
+		green #96B28C #E6EDE6,
+		azure #8CBAC9 #E4EDF0,
+		blue #9FB7CB #E6EAEF,
 		purple #C99CD1 #ECE6EF
 	{
 		&.pairgroup_#{nth($s, 1)}{
@@ -105,7 +105,7 @@
 	}
 	$op: 1; 
 	&.pairgroup_red .pair{@include background-image(linear-gradient(#fff, rgba(#EDE9E8,$op)));}
-	&.pairgroup_yellow .pair{@include background-image(linear-gradient(#fff, rgba(#EFEDE6,$op)));}
+	&.pairgroup_yello .pair{@include background-image(linear-gradient(#fff, rgba(#EFEDE6,$op)));}
 	&.pairgroup_green .pair{@include background-image(linear-gradient(#fff, rgba(#E6EDE6,$op)));}
 	&.pairgroup_azure .pair{@include background-image(linear-gradient(#fff, rgba(#E4EDF0,$op)));}
 	&.pairgroup_blue .pair{@include background-image(linear-gradient(#fff, rgba(#E6EAEF,$op)));}
