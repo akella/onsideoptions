@@ -27,7 +27,7 @@
 		position: relative;
 		@include transition(all .1s linear);
 		&:hover{
-			background: rgba(#fff, .1);
+			@include background(linear-gradient(#2b2b2b, #383838));
 			@include transition(all .1s linear);
 		}
 	}
@@ -52,17 +52,16 @@
 	}
 	.header__numbericon{
 		display: inline-block;
-		min-width: 15px;
-		height: 15px;
+		height: 14px;
+		padding: 0 4px;
 		text-align: center;
 		vertical-align: middle;
 		font-size: 10px;
-		line-height: 15px;
+		line-height: 14px;
 		color: #fff;
 		margin-left: 10px;
 		border-radius: 15px;
 		@include background-image(linear-gradient(#ffc000, #ff9200));
-		
 	}
 	.header__tradeicon{
 		@include s(trades);
@@ -79,10 +78,35 @@
 	.header__livetrades, .header__settledtrades{
 		@extend %headerblock;
 		width: auto;
+		&.is-active{
+			@include background(linear-gradient(#2b2b2b, #383838));
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 5px;
+				background: #FFAE00;
+			}
+		}
 	}
 	.header__settledtrades{
 		border-right: 1px solid #484848;
 		box-shadow: 1px 0 0 #242424, -1px 0 0 #484848;
+		.header__numbericon{
+			@include background(linear-gradient(#7c7c7c, #5e5e5e));
+		}
+	}
+	.header__livetrades-drop{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 450px;
+		padding-top: 15px;
+		border-radius: 0 0 3px 3px;
+		background-color: #383838;
+		box-shadow: 8px 13px 21px rgba(0, 0, 0, 0.18);
 	}
 	.account{
 		position: relative;
