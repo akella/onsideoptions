@@ -58,7 +58,7 @@ body{
 }
 .l-bet{
 	@extend %l;
-	top: 0;	
+	top: $recommend + $marketassets;
 	left: auto;
 	right: 0;
 	width: $right;

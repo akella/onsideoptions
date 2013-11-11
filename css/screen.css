@@ -32,7 +32,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 
 .l-pairs { top: 100px; width: 278px; }
 
-.l-bet { top: 0; left: auto; right: 0; width: 309px; }
+.l-bet { top: 100px; left: auto; right: 0; width: 309px; }
 
 .l-showpair { top: 100px; left: 278px; right: 309px; }
 .l-showpair img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: block; width: 100%; height: 100%; }
