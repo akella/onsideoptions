@@ -288,11 +288,15 @@
 	}
 }
 .table-livetrades__money, .table-livetrades__currency{
-	display: inline-block;
-	vertical-align: middle;
 	color: #FFF;
 }
+.table-livetrades__money{
+	float: left;
+	height: 23px;
+	line-height: 23px;
+}
 .table-livetrades__currency{
+	float: right;
 	width: 23px;
 	height: 23px;
 	margin-left: 8px;
