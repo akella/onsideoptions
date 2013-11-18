@@ -56,6 +56,26 @@ body{
 a img,fieldset{
 	border:none;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+textarea, button, select, input{
+    border: none;
+    outline: none;
+}
+button{
+    background: none;
+    line-height: 1;
+    cursor: pointer;
+    &::-moz-focus-inner{
+        padding: 0;
+        border: 0;
+    }
+}
+
 
 
 

@@ -167,6 +167,136 @@
 			
 		}
 	}
+	.header__inner{
+		width: 956px;
+		margin: 0 auto;
+		@extend %clr;
+		.header__logo{
+			width: 135px;
+			a{
+				left: 0;
+			}
+		}
+		.header__signout{
+			float: left;
+		}
+	}
+	.header__nav{
+		float: left;
+		@extend %headerblock;
+		cursor: default;
+		&:hover{
+			background: none;
+		}
+		ul{
+			float: left;
+			li{
+				position: relative;
+				float: left;
+				list-style-type: none;
+				padding-left: 16px;
+				margin-left: 15px;				
+				&:after{
+					content: "";
+					position: absolute;
+					top: 22px;
+					left: 0;
+					width: 1px;
+					height: 16px;
+					background: #484848;
+				}
+				&:first-child{
+					margin: 0;
+					padding: 0;
+					&:after{
+						display: none;	
+					}
+				}
+			}
+			a{
+				@include reg();
+				font-size: 14px;
+				text-decoration: none;
+				color: #FFF;
+			}
+		}
+	}
+	.header__search {
+		@extend %headerblock;		
+		font-size: 0;
+		cursor: default;
+		&:hover{
+			background: none;
+		}
+		.header__search-form {
+			position: relative;
+			display: inline-block;
+			width: 180px;
+			height: 30px;
+			vertical-align: middle;
+			input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 136px;
+				height: 28px;
+				padding: 0 30px 0 12px;
+				border: 1px solid #46484a;
+				border-radius: 3px;
+				background: none;
+				box-shadow: inset 2px 2px 5px rgba(0,0,0,.35);
+				font-size: 11px;
+				color: #808080;
+				font-style: italic;
+			}
+			button{
+				position: absolute;
+				top: 1px;
+				right: 1px;
+				width: 30px;
+				height: 28px;
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					@include s(btn-search)
+				}
+			}
+		}
+	}
+	.header__reg{
+		@extend %headerblock;		
+		font-size: 0;
+		cursor: default;
+		&:hover{
+			background: none;
+		}
+		span{
+			display: inline-block;
+			width: 70px;
+			font-size: 11px;
+			color: #adadad;
+			line-height: 1.1;
+			vertical-align: middle;
+		}
+		.btn{
+			position: relative;
+			width: 130px;
+			height: 30px;
+			padding-left: 35px;
+			line-height: 30px;
+			vertical-align: middle;
+			@include demi();
+			font-size: 11px;
+			text-align: left;
+			overflow: visible;
+			i{
+				position: absolute;
+				top: 10px;
+				left: 14px;
+				@include s(header-reg-plus);
+			}
+		}
+	}
 }
 
 .hmarket{
