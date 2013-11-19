@@ -1,0 +1,177 @@
+//common styles
+.container{
+  width: 956px;
+  margin: 0 auto;
+}
+.breadcrumbs{
+  padding: 12px 0 40px;
+  @extend %clr;
+}
+.breadcrumbs__list{
+  float: left;
+  li{
+    position: relative;
+    float: left;
+    padding-left: 32px;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      @include s(bc-arr);
+    }
+    &:first-child{
+      padding: 0;
+      &:after{
+        display: none;
+      }
+    }
+  }
+  a{
+    color: #9A9A9A;   
+  }
+}
+//form
+.form{  
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+.form_my-settings{
+  width: 470px;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+.form__fieldset{
+  margin-bottom: 20px;
+}
+.form__field{
+  display: block;
+  margin-bottom: 10px;
+} 
+.form__label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #646464;
+} 
+.form__input{
+  input{
+    width: 100%;
+    padding: 0 10px;
+    @include box-sizing(border-box);
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,.03);
+  }
+}
+.form__star{
+  color: #f27378;
+}
+.form__down{
+  @extend %clr;
+  .btn{
+    float: right;
+    margin-left: 45px;
+  }
+  .checkbox{
+    display: table;
+  }
+}
+  
+
+.checkbox{
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  font-size: 12px;
+  color: #9A9A9A;
+  font-style: italic;
+  input, i{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input{
+    opacity: 0;
+    &:checked + i{
+      &:after{
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        @include s(checkbox);
+      }
+    }
+  }
+  i{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,.03);
+  }
+}
+
+//btn
+.btn{
+  display: inline-block;
+  text-align: center;
+  @include border-radius(3px);
+  @include background-clip(padding-box);
+  background-color: #fff;
+  @include box-shadow(0 1px 1px rgba(0,0,0,.15)); 
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include bold;
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  width: 132px;
+  cursor: pointer;
+}
+.btn_red{
+  @include background-image(linear-gradient(bottom, #CB424D 0%, #EB6B73 100%));
+}
+.btn_orange{
+  @include background-image(linear-gradient(bottom, #FA8E2C 0%, #FCBD36 100%));
+}
+.btn_sm{
+  height: 40px;
+  line-height: 40px;
+}
+
+//clock
+.clock{
+  font-size: 0;
+}
+.clock__time{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  width: 38px;
+  &:first-child{
+    margin: 0;
+  }
+}
+.clock__label{
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #C0C2C2;
+  @include demi;
+  margin-bottom: 6px;
+  text-align: center;
+  display: block;
+}
+.clock__digit{
+  @include s(digit);
+  line-height: 24px;
+  text-align: center;
+  font-size: 20px;
+  @include demi;
+  float: left;
+  margin-right: 1px;
+}
