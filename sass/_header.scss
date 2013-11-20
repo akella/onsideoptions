@@ -75,7 +75,7 @@
 		@include s(settledtrades);
 		margin-right: 15px;
 	}
-	.header__livetrades, .header__settledtrades{
+	.header__livetrades, .header__settledtrades, .account{
 		@extend %headerblock;
 		width: auto;
 		&.is-active{
@@ -141,6 +141,61 @@
 			right: 17px;
 			top: 50%;
 			margin-top: -3px;
+		}
+		.account__drop{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 250px;
+			background: #373737;
+			li{
+				border-bottom: 1px solid #474747;
+				a{
+					position: relative;
+					display: block;
+					padding: 0 40px 0 35px;
+					height: 39px;
+					border-bottom: 1px solid #292929;
+					line-height: 39px;
+					font-size: 13px;
+					color: #FFF;
+					&:after{
+						content: "";
+						position: absolute;
+						top: 15px;
+						left: 16px;
+						@include s(account-drop-arr);
+					}
+					&:hover{
+						@include background(linear-gradient(#383838, #232323));
+						font-weight: bold;
+						.account__ico-user{
+							@include s(account-ico-user-h)
+						}
+						.account__ico-bank{
+							@include s(account-ico-bank-h)
+						}
+					}
+				}
+			}
+		}
+		.account__drop-btn{
+			padding: 10px;
+			line-height: 1;
+			.btn{
+				width: 100%;
+			}
+		}
+		.account__ico-user, .account__ico-bank{
+			position: absolute;
+			top: 12px;
+			right: 12px;
+		}
+		.account__ico-user{
+			@include s(account-ico-user)
+		}
+		.account__ico-bank{
+			@include s(account-ico-bank)
 		}
 	}
 	.header__signout{

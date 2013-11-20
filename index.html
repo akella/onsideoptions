@@ -148,11 +148,21 @@
 
 		
 		<!-- begin account -->
-		<div class="account">
+		<div class="account is-active">
 			<div class="account__icon"></div>
 			<div class="account__name">Hamish<br> Raw</div>
 			<div class="account__value">$266</div>
 			<i class="account__arrow"></i>
+			<div class="account__drop">
+				<ul>
+					<li><a href="#">My Account<i class="account__ico-user"></i></a></li>
+					<li><a href="#">My Banking<i class="account__ico-bank"></i></a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+				<div class="account__drop-btn">
+					<button class="btn btn_orange btn_sm">make Deposit</button>
+				</div>
+			</div>
 		</div>
 		<!-- end account -->
 		
@@ -593,8 +603,11 @@
 			</div></div>
 
 			<div class="createbet">
-				<input type="text" class="createbet__input" placeholder="Amount">
-				<div class="createbet__submit">Create Bet</div>
+				<div class="select select_big">
+					<input class="input" type="text" placeholder="Amount">
+					<div class="select__arr"><i></i></div>
+				</div>
+				<button class="btn btn_big btn_orange">Create Bet</button>
 			</div>
 
 			<div class="createbet createbet_get">
@@ -602,7 +615,7 @@
 					<small>You can get</small>
 					<strong>$ 1570.25</strong>
 				</div>
-				<div class="createbet__submit">Get money</div>
+				<button class="btn btn_big btn_red">Get money</button>
 			</div>
 
 		</div>

@@ -70,17 +70,32 @@
 	<div class="container">
 		<div class="form">
 			<fieldset class="form__fieldset">			
-				<label class="form__field">
+				<div class="form__field">
 					<span class="form__label">First name<span class="form__star">*</span></span>
-					<span class="form__input"><input type="text"></span>
-				</label>
+					<div class="select">
+						<input class="input" type="text">
+						<div class="select__arr"><i></i></div>
+						<ul class="select__drop">
+							<li>Great Britain</li>
+							<li>USA</li>
+							<li>Ukraine</li>
+							<li>Russia</li>
+							<li>Germany</li>
+							<li>Italy</li>
+							<li>France</li>
+						</ul>
+					</div>
+				</div>
 				<label class="form__field">
 					<span class="form__label">Last name</span>
 					<span class="form__input"><input type="text"></span>
 				</label>
-				<label class="form__field">
+				<label class="form__field is-error">
 					<span class="form__label">E-mail<span class="form__star">*</span></span>
-					<span class="form__input"><input type="text"></span>
+					<span class="form__input">
+						<input type="text">
+						<span class="form__message"><span>Enter the card number without spaces</span></span>
+					</span>					
 				</label>
 				<label class="form__field">
 					<span class="form__label">Password<span class="form__star">*</span></span>
@@ -94,10 +109,13 @@
 					<span class="form__label">Language<span class="form__star">*</span></span>
 					<span class="form__input"><input type="text"></span>
 				</label>
-				<label class="form__field">
+				<div class="form__field">
 					<span class="form__label">Fop format<span class="form__star">*</span></span>
-					<span class="form__input"><input type="text"></span>
-				</label>
+					<div class="select">
+						<input class="input" type="text">
+						<div class="select__arr"><i></i></div>
+					</div>
+				</div>
 				<label class="form__field">
 					<span class="form__label">Default bet amount<span class="form__star">*</span></span>
 					<span class="form__input"><input type="text"></span>
