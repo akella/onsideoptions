@@ -150,7 +150,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 .header .account .account__name { display: inline-block; margin-right: 15px; vertical-align: middle; font-size: 13px; color: #fff; line-height: 1.1; }
 .header .account .account__value { display: inline-block; margin-right: 15px; vertical-align: middle; line-height: 1; font-size: 30px; color: #fff; }
 .header .account .account__arrow { background: url('../img/icons-sc1cd1479f1.png') 0 -1234px no-repeat; display: inline-block; width: 7px; height: 4px; position: absolute; right: 17px; top: 50%; margin-top: -3px; }
-.header .account .account__drop { position: absolute; top: 100%; left: 0; width: 250px; background: #373737; }
+.header .account .account__drop { position: absolute; top: 100%; left: 0; right: 0; min-width: 150px; background: #373737; }
 .header .account .account__drop li { border-bottom: 1px solid #474747; }
 .header .account .account__drop li a { position: relative; display: block; padding: 0 40px 0 35px; height: 39px; border-bottom: 1px solid #292929; line-height: 39px; font-size: 13px; color: #FFF; }
 .header .account .account__drop li a:after { content: ""; position: absolute; top: 15px; left: 16px; background: url('../img/icons-sc1cd1479f1.png') 0 -1341px no-repeat; display: inline-block; width: 4px; height: 7px; }
@@ -313,7 +313,7 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 
 .createbet { font-size: 0; width: 270px; margin-left: 18px; }
 .createbet .select { display: inline-block; width: 132px; margin-right: 6px; vertical-align: top; }
-.createbet .select .input { height: 50px; }
+.createbet .select .input { height: 50px; font-family: "corporate_sregular",Arial,sans-serif; font-size: 18px; }
 .createbet .btn { vertical-align: top; }
 .createbet .createbet__amount { float: left; width: 132px; margin-right: 6px; }
 .createbet .createbet__amount small { font-size: 10px; text-transform: uppercase; opacity: .3; color: #000; font-family: "corporate_sregular",Arial,sans-serif; }
@@ -529,9 +529,14 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 
 .form__label { display: block; margin-bottom: 5px; font-size: 13px; color: #646464; }
 
-.form__input { display: block; }
+.form__input, .form__select { display: block; }
 
-.form__input input, .input { width: 100%; padding: 0 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; border: 1px solid #e5e5e5; border-radius: 3px; background-color: #fff; box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.03); }
+.form__select { position: relative; }
+.form__select:hover .form__select-arr { display: block; border-color: #e5e5e5; border-radius: 3px; background-color: #f9f9f9; box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.03); }
+.form__select .form__select-arr { top: 3px; right: 3px; bottom: 3px; }
+.form__select select { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; }
+
+.form__input input, .input, .form__select { width: 100%; padding: 0 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; border: 1px solid #e5e5e5; border-radius: 3px; background-color: #fff; box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.03); }
 
 .form__star { color: #f27378; }
 
@@ -545,8 +550,8 @@ body { min-width: 1250px; min-height: 100%; overflow: hidden; position: relative
 
 .select_big .input { height: 50px; }
 
-.select__arr { position: absolute; top: 4px; right: 4px; bottom: 4px; width: 30px; border: 1px solid #fff; cursor: pointer; }
-.select__arr i { position: absolute; top: 50%; left: 11px; width: 0px; height: 0px; margin-top: -2px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #2e3540 transparent transparent transparent; }
+.select__arr, .form__select-arr { position: absolute; top: 4px; right: 4px; bottom: 4px; width: 30px; border: 1px solid #fff; cursor: pointer; }
+.select__arr i, .form__select-arr i { position: absolute; top: 50%; left: 11px; width: 0px; height: 0px; margin-top: -2px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #2e3540 transparent transparent transparent; }
 
 .select__drop { position: absolute; top: 0; left: 0; right: 0; padding: 10px; background: #fff; border-radius: 3px; box-shadow: 3px 8px 24px rgba(0, 0, 0, 0.22); z-index: 100; }
 .select__drop li { position: relative; padding: 9px 10px 8px; border-radius: 4px; font-size: 13px; color: #5C5C5C; cursor: pointer; }

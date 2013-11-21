@@ -146,7 +146,8 @@
 			position: absolute;
 			top: 100%;
 			left: 0;
-			width: 250px;
+			right: 0;
+			min-width: 150px;
 			background: #373737;
 			li{
 				border-bottom: 1px solid #474747;

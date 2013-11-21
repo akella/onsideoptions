@@ -181,6 +181,8 @@
 		vertical-align: top;
 		.input{
 			height: 50px;
+			@include reg;
+			font-size: 18px;
 		}
 	}
 	.btn{
